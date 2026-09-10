@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;600&amp;family=JetBrains+Mono:wght@500;600&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface-variant":"#d0c5af","on-tertiary-fixed":"#032017","secondary-fixed-dim":"#afd0a0","error-container":"#93000a","on-error":"#690005","inverse-surface":"#e0e3df","surface-container-highest":"#323633","background":"#101412","on-primary":"#3c2f00","on-primary-fixed":"#241a00","inverse-primary":"#735c00","outline-variant":"#4d4635","on-primary-container":"#554300","secondary-fixed":"#cbecba","on-secondary-fixed-variant":"#324e29","tertiary-fixed":"#caeada","primary-fixed":"#ffe088","on-tertiary-container":"#2f4b3f","primary":"#f2ca50","primary-fixed-dim":"#e9c349","surface-container-low":"#181c1a","on-surface":"#e0e3df","tertiary-container":"#9bbaab","surface-dim":"#101412","on-secondary-fixed":"#072103","primary-container":"#d4af37","outline":"#99907c","secondary":"#afd0a0","tertiary":"#b6d6c6","surface-container":"#1c201e","on-error-container":"#ffdad6","tertiary-fixed-dim":"#aecebe","on-secondary":"#1c3714","surface-variant":"#323633","surface-container-high":"#272b29","on-background":"#e0e3df","on-tertiary-fixed-variant":"#304c41","secondary-container":"#324e29","surface-bright":"#363a38","on-secondary-container":"#9ebe8f","on-primary-fixed-variant":"#574500","inverse-on-surface":"#2d312f","surface-tint":"#e9c349","surface-container-lowest":"#0b0f0d","error":"#ffb4ab","on-tertiary":"#1a362b","surface":"#101412"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.75rem","space-xl":"2rem","container-max":"1280px","space-xs":"0.5rem","space-md":"1rem","gutter-mobile":"1rem","space-3xl":"4.5rem","gutter-desktop":"1.5rem","space-2xl":"3rem","space-xxs":"0.25rem","space-lg":"1.5rem"},"fontFamily":{"label-tactical":["JetBrains Mono"],"headline-lg":["Montserrat"],"display-lg-mobile":["Montserrat"],"headline-md":["Montserrat"],"headline-sm":["Montserrat"],"display-lg":["Montserrat"],"body-md":["Chivo"],"label-badge":["Montserrat"],"body-lg":["Chivo"],"body-sm":["Chivo"]},"fontSize":{"label-tactical":["12px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"800"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-badge":["11px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-28 max-w-container-max mx-auto px-gutter-desktop flex flex-col justify-between py-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-base">call</span><span class="font-label-tactical text-label-tactical text-on-surface-variant">SIAGA DARURAT: 1500-TNI (1500-864)</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-base">military_tech</span><span class="font-label-tactical text-label-tactical text-on-surface-variant">MABESAD JAKARTA PUSAT</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs"><span class="font-label-tactical text-label-tactical text-primary">ID</span><span class="font-label-tactical text-label-tactical text-outline">|</span><span class="font-label-tactical text-label-tactical text-outline-variant hover:text-on-surface transition-colors cursor-pointer">EN</span></div><div class="flex items-center gap-space-sm"><a class="font-label-tactical text-label-tactical px-space-sm py-space-xxs rounded bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary transition-all" href="#">PENGADUAN &amp; INFORMASI</a><a class="font-label-tactical text-label-tactical px-space-sm py-space-xxs rounded bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-all" href="#">PORTAL REKRUTMEN</a></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH5XWJstmnmCx5tQ7-VULovSZq0VbSsrupHAexqkucfX2Lvm1DQ36WDX20xwoCaByKhdtnj8TGGNcRYX_v4DUHdfW0kD6chpmZTPoFPERic49WR0oPk6cMZJcfCVOG3kTwDqeWA7CvZQdCDMK4xyLjz8DNjlsdiQMe4ZtzAMpyjPKZHeLHifQZfoRTGmeaGYY_rijBN-MWSaaklTIQLyMlOIP1u12J1ROCytZK8Rtk3fCiGiHo_WohCw"/></div></div><div class="flex items-center justify-between gap-space-lg pt-space-xs"><div class="flex items-center gap-space-md"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-wider text-primary">TENTARA NASIONAL INDONESIA ANGKATAN DARAT</span><span class="font-label-badge text-label-badge tracking-widest text-secondary-fixed-dim">KARTIKA EKA PAKSI</span></div></div><nav class="flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded"><a aria-current="page" class="px-space-sm py-space-xs transition-all bg-primary-container text-on-primary-container font-bold rounded" data-path="beranda" href="#">Beranda</a><a class="font-label-tactical text-label-tactical px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profil-dan-doktrin" href="#">Profil &amp; Doktrin</a><a class="font-label-tactical text-label-tactical px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="struktur-komando" href="#">Struktur Komando</a><a class="font-label-tactical text-label-tactical px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="alutsista-dan-kekuatan" href="#">Alutsista &amp; Kekuatan</a><a class="font-label-tactical text-label-tactical px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="penerimaan-prajurit" href="#">Penerimaan Prajurit</a><a class="font-label-tactical text-label-tactical px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="kilas-berita" href="#">Kilas Berita</a><a class="font-label-tactical text-label-tactical px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="transparansi-publik" href="#">Transparansi Publik</a></nav></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION WITH CINEMATIC MILITARY BACKGROUND -->
+<section class="relative w-full -mt-28 min-h-[92vh] flex items-end pb-space-2xl overflow-hidden bg-surface-container-lowest">
+<!-- Background Imagery with Gradient Scrim -->
+<div class="absolute inset-0 z-0">
+<img alt="TNI Angkatan Darat Operasi Taktis" class="w-full h-full object-cover object-center scale-105 transform motion-safe:transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw_nYKitgNrwEu4m-Cq6I6xHNBGnJVKo0LlJOgSWYHsyGN5YXo9eV2pBGKWETWMtFB_1SVjnexWYMCwk7fYIHQzbXxJCdvwdJp27IspB4r7hLrWnVMWg0hptn_wU5FBqpI9Qk0WVRJkASOjROBtYCGYW3UaFD7cR0hgSXw4tvBryQhNNao8fl8o86WvW4zugXi5nuAfSx3qsgS2y4MOUjZQHxLDnWOGz_OLatse3IeBPZvuRN62KklhA"/>
+<!-- Layered Military Tactical Gradients -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/85 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest/90 via-surface-container-lowest/40 to-transparent"></div>
+<!-- Subtle Tactical Grid Overlay -->
+<div class="absolute inset-0 opacity-[0.07] bg-[radial-gradient(var(--primary)_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+</div>
+<!-- Content Container -->
+<div class="relative z-10 w-full max-w-container-max mx-auto px-gutter-desktop pt-space-3xl">
+<div class="max-w-3xl flex flex-col gap-space-md">
+<!-- Badge / Doktrin Ribbon -->
+<div class="flex items-center gap-space-xs self-start bg-secondary-container/80 backdrop-blur-md px-space-sm py-space-xxs rounded shadow-md">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-badge text-label-badge text-primary uppercase">DOKTRIN KARTIKA EKA PAKSI • TANGGUH, PROFESIONAL, DICINTAI RAKYAT</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-lg text-display-lg font-extrabold text-on-surface tracking-tight uppercase leading-[1.08]">
+          Garda Terdepan <br/>
+<span class="text-primary drop-shadow-[0_2px_12px_rgba(212,175,55,0.3)]">Kedaulatan &amp; Kehormatan</span> <br/>
+          Ibu Pertiwi
+        </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl font-normal leading-relaxed">
+          Menjaga keutuhan Negara Kesatuan Republik Indonesia dari Sabang sampai Merauke dengan kesiapan operasional prima, modernisasi alutsista terpadu, serta kemanunggalan TNI dengan rakyat.
+        </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-fixed-dim text-on-primary font-headline-sm text-label-tactical font-bold px-space-xl py-space-sm rounded uppercase tracking-wider shadow-lg transition-all duration-200" href="#alutsista">
+<span>Jelajahi Alutsista &amp; Kekuatan</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs bg-surface-container-high/70 hover:bg-surface-container-highest text-on-surface font-headline-sm text-label-tactical font-semibold px-space-xl py-space-sm rounded uppercase tracking-wider backdrop-blur-md transition-all duration-200 shadow-md" href="#rekrutmen">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span>Penerimaan Prajurit 2025</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK STATS TICKER STRIP -->
+<section class="w-full bg-surface-container-low py-space-md shadow-md">
+<div class="max-w-container-max mx-auto px-gutter-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md divide-y md:divide-y-0 divide-surface-container-highest">
+<div class="flex items-center gap-space-md p-space-xs">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-2xl">shield</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-display-lg text-headline-lg text-primary leading-none">15</span>
+<span class="font-label-tactical text-label-tactical text-on-surface-variant truncate uppercase">Kodam Teritorial</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md p-space-xs">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-secondary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-2xl">military_tech</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-display-lg text-headline-lg text-secondary leading-none">450+</span>
+<span class="font-label-tactical text-label-tactical text-on-surface-variant truncate uppercase">Satuan Operasional</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md p-space-xs">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-2xl">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-display-lg text-headline-lg text-on-surface leading-none">100%</span>
+<span class="font-label-tactical text-label-tactical text-on-surface-variant truncate uppercase">Kesiapsiagaan Tempur</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md p-space-xs">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-secondary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-2xl">radar</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-display-lg text-headline-lg text-secondary-fixed-dim leading-none">24/7</span>
+<span class="font-label-tactical text-label-tactical text-on-surface-variant truncate uppercase">Patroli Perbatasan RI</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- KASAD COMMAND ADDRESS & LOGO INSIGNIA SECTION -->
+<section class="w-full py-space-3xl max-w-container-max mx-auto px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column: Insignia Emblem Badge & Decorative Frame -->
+<div class="lg:col-span-5 flex flex-col items-center justify-center p-space-xl bg-surface-container-low rounded-xl shadow-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-48 h-48 bg-primary/10 rounded-full filter blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-secondary/10 rounded-full filter blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-52 h-52 relative mb-space-md p-space-xs rounded-xl bg-surface-container-high/70 shadow-2xl flex items-center justify-center">
+<img alt="Lambang Resmi Kartika Eka Paksi TNI AD" class="w-full h-full object-contain filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.6)]" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-widest">MARKAS BESAR ANGKATAN DARAT</span>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase mt-space-xxs">Kartika Eka Paksi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs max-w-xs">
+            Burung Gagah Perkasa Tanpa Tanding Menjunjung Cita-Cita Luhur Kemerdekaan Indonesia.
+          </p>
+<div class="flex items-center gap-space-xs mt-space-md">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Strategic Command Address -->
+<div class="lg:col-span-7 flex flex-col gap-space-md bg-surface-container p-space-xl rounded-xl shadow-lg relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg">format_quote</span>
+<span class="font-label-tactical text-label-tactical text-primary uppercase tracking-wider">Amanat Strategis KASAD</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-on-surface-variant bg-surface-container-high px-space-xs py-space-xxs rounded">DOK-KOMANDO / 2025</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+          “TNI AD yang Modern, Mandiri, dan Manunggal Mengawal Kedaulatan Bangsa”
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Prajurit TNI Angkatan Darat tidak sekadar memegang senjata, melainkan memikul kehormatan bangsa dan denyut nadi rakyat. Di era tantangan asimetris dan disrupsi teknologi pertahanan abad ke-21, kesiapsiagaan operasional dan loyalitas tegak lurus kepada Negara Kesatuan Republik Indonesia adalah harga mutlak yang tidak dapat ditawar.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Melalui modernisasi alutsista dan penguatan karakter teritorial, TNI AD terus hadir di tengah kesulitan rakyat, menjadi solusi nyata, dan membentengi setiap jengkal perbatasan darat nusantara.
+        </p>
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Jenderal TNI Maruli Simanjuntak, M.Sc.</span>
+<span class="font-label-tactical text-label-tactical text-on-surface-variant">Kepala Staf Angkatan Darat (KASAD)</span>
+</div>
+<a class="inline-flex items-center gap-space-xs text-primary hover:text-primary-fixed bg-surface-container-high hover:bg-surface-container-highest px-space-md py-space-xs rounded font-label-tactical text-label-tactical uppercase tracking-wider transition-colors shadow-sm" href="#">
+<span>Amanat Lengkap</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- PILAR KEKUATAN STRATEGIS (3-COLUMN TACTICAL BENTO) -->
+<section class="w-full py-space-3xl bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">verified_user</span>
+<span class="font-label-tactical text-label-tactical text-secondary uppercase">Tridharma Pengabdian Matra Darat</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold uppercase">
+            Pilar Kekuatan Strategis TNI AD
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Fondasi doktrinal pertahanan semesta mengintegrasikan keunggulan taktis militer konvensional, respon krisis, dan harmoni kerakyatan.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Pillar 1: OMP -->
+<div class="flex flex-col justify-between bg-surface-container-low hover:bg-surface-container p-space-xl rounded-xl shadow-lg transition-all duration-300">
+<div class="flex flex-col gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-3xl">sports_martial_arts</span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge text-primary uppercase">OPERASI TEMPUR UTAMA</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mt-space-xxs">Operasi Militer Perang (OMP)</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Kesiapsiagaan penuh memenangkan peperangan darat melalui integrasi manuver pasukan infanteri mekanis, kavaleri tempur berat, perlindungan udara taktis, dan artileri medan presisi tinggi.
+            </p>
+<ul class="flex flex-col gap-space-xs pt-space-xs font-label-tactical text-label-tactical text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-sm">check</span>
+<span>Komando Strategis Cadangan (KOSTRAD)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-sm">check</span>
+<span>Komando Pasukan Khusus (KOPASSUS)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-sm">check</span>
+<span>Penerbangan Angkatan Darat (PENERBAD)</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-lg mt-space-md">
+<a class="inline-flex items-center gap-space-xs font-label-tactical text-label-tactical text-primary hover:text-primary-fixed uppercase tracking-wider" href="#">
+<span>Rincian Kemampuan OMP</span>
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Pillar 2: OMSP -->
+<div class="flex flex-col justify-between bg-surface-container-low hover:bg-surface-container p-space-xl rounded-xl shadow-lg transition-all duration-300">
+<div class="flex flex-col gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-3xl">public</span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge text-secondary uppercase">RESPON KRISIS &amp; DUNIA</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mt-space-xxs">Operasi Militer Selain Perang</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Pengamanan teritorial perbatasan antar-negara (Satgas Pamtas), operasi penanggulangan bencana alam tanggap cepat, dan kontingen perdamaian PBB Kontingen Garuda di kancah global.
+            </p>
+<ul class="flex flex-col gap-space-xs pt-space-xs font-label-tactical text-label-tactical text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-sm">check</span>
+<span>Satgas Pengamanan Perbatasan RI-PNG / RI-Malaysia</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-sm">check</span>
+<span>Satgas Penanggulangan Bencana Alam (PRCPB)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-sm">check</span>
+<span>Misi Perdamaian Dunia UNIFIL &amp; MONUSCO</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-lg mt-space-md">
+<a class="inline-flex items-center gap-space-xs font-label-tactical text-label-tactical text-secondary hover:text-secondary-fixed uppercase tracking-wider" href="#">
+<span>Misi Perdamaian &amp; Pamtas</span>
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Pillar 3: Kemanunggalan -->
+<div class="flex flex-col justify-between bg-surface-container-low hover:bg-surface-container p-space-xl rounded-xl shadow-lg transition-all duration-300">
+<div class="flex flex-col gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-3xl">handshake</span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge text-primary uppercase">SINERGI KERAKYATAN</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mt-space-xxs">Kemanunggalan Bersama Rakyat</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              TNI Angkatan Darat berasal dari rakyat, berjuang bersama rakyat, dan untuk rakyat. Membangun akselerasi desa tertinggal dan kedaulatan pangan demi ketahanan nasional yang kokoh.
+            </p>
+<ul class="flex flex-col gap-space-xs pt-space-xs font-label-tactical text-label-tactical text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-sm">check</span>
+<span>TNI Manunggal Membangun Desa (TMMD)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-sm">check</span>
+<span>TNI AD Manunggal Air Bersih Nusantara</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-sm">check</span>
+<span>Program Ketahanan Pangan Nasional Terintegrasi</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-lg mt-space-md">
+<a class="inline-flex items-center gap-space-xs font-label-tactical text-label-tactical text-primary hover:text-primary-fixed uppercase tracking-wider" href="#">
+<span>Program Teritorial</span>
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ETALASE ALUTSISTA MODERN (TACTICAL ASSETS SHOWCASE) -->
+<section class="w-full py-space-3xl max-w-container-max mx-auto px-gutter-desktop" id="alutsista">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">precision_manufacturing</span>
+<span class="font-label-tactical text-label-tactical text-primary uppercase">Modernisasi Pertahanan Abad 21</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold uppercase">
+          Etalase Alutsista Utama Matra Darat
+        </h2>
+</div>
+<a class="inline-flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-container-highest px-space-md py-space-xs rounded text-primary font-label-tactical text-label-tactical uppercase tracking-wider transition-colors" href="#">
+<span>Katalog Lengkap Alutsista</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- 4-Card Asset Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Asset 1: Leopard 2RI -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+<div class="relative w-full h-52 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern military main battle tank Leopard 2RI in Indonesian army camouflage moving through tropical training grounds, dramatic dust and warm atmospheric sunrise lighting, 8k hyper-realistic defense photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPMcVVgv9vTdpgfAxVySuNSg_Jb3B1wd_yiS108nZm34O_yMDlMhNl3WrhLjl9G6UGNaa6tmFZveaWxxHmB3wyj08fCQK0XaLgx990k9TCCTwLBGpWu24dB6FpLk0oXHf14s6RunYioVELtDVgbcP_86tB6rGjHmE1xZYvT9sWVJma8H8kVtPyJqrB06slsI6oDDKLLEnhbUPQn22AzPcauGYjVRz5YlVis7eCgXOy_mCLsgs2aSP4rQ"/>
+<span class="absolute top-space-xs left-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-space-xs py-space-xxs rounded font-label-tactical text-label-tactical text-primary">KAVALERI TEMPUR</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Leopard 2RI MBT</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xxs">
+              Main Battle Tank generasi mutakhir dengan sistem proteksi balistik modular dan meriam 120mm Smoothbore L44.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-tactical text-label-tactical text-on-surface-variant">
+<span>KALIBER: 120 MM</span>
+<span class="text-secondary font-semibold">STATUS: SIAGA 1</span>
+</div>
+</div>
+</div>
+<!-- Asset 2: Panser Anoa 6x6 -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+<div class="relative w-full h-52 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Indonesian armored personnel carrier Pindad Anoa 6x6 in dark olive green finish stationed on border patrol road, tactical antennas and high precision remote weapon station, cinematic mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDazNn9_Z5tJSg9SIjiIrovLM1QUgYTy9AxTDRw0bxKSzU_z0mpI4BRTJac4LZ8J2hCPz8k0D4P7k-eJUMDobpPmBRkAGCEEXlyRTDIm7L5iyF6cXIxghsjMwA5bQp2xsZgNPmSn_LXwrdFkJO7Zi0NrIOML6J5Ppw0lRFTsSNth_Sz26vGdUUVlCAabpzjUUsv8uZ0yZCbWhRyh7JNIpMlk1ay4RlVouy8glVgHiaavqiQX9R4JrcsFQ"/>
+<span class="absolute top-space-xs left-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-space-xs py-space-xxs rounded font-label-tactical text-label-tactical text-secondary">INFANTERI MEKANIS</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Pindad Anoa 6x6 APC</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xxs">
+              Kendaraan tempur lapis baja pengangkut personel produksi industri pertahanan dalam negeri karya anak bangsa.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-tactical text-label-tactical text-on-surface-variant">
+<span>KAPASITAS: 12 PERSONEL</span>
+<span class="text-secondary font-semibold">KARYA BANGSA</span>
+</div>
+</div>
+</div>
+<!-- Asset 3: AH-64E Apache -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+<div class="relative w-full h-52 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="AH-64E Apache Guardian attack helicopter flying low altitude above Indonesian tropical jungle canopy, Longbow radar mounted above rotor, intense cinematic golden hour military aviation photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpggr4DbyYQBwqi1JoZEWGVSsrfzVgEizgK1fI2CIcjWW1M4fZ_5iB_d54Bojx5yl5SUMch_0M4ZxdSzm-4Z4fMcr-AAdYfJqg7SGYuGkbZUy0CjVXO5gEC0J76Bns6ersiiKDXaW5rvfS91FmQcePvVc5dlUwVNpdJmpFE4HBIfTkByCulIrN4rI2NKnbD3UHiD9LFvnlxu1KlxqHv2sePkM8Np5e3ID8oCobaHSQqiCJ9irsiii2BQ"/>
+<span class="absolute top-space-xs left-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-space-xs py-space-xxs rounded font-label-tactical text-label-tactical text-primary">PENERBANGAN AD</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">AH-64E Apache Guardian</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xxs">
+              Helikopter serbu berat dengan radar pengendali tembakan Longbow dan rudal antitank berpresisi tinggi.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-tactical text-label-tactical text-on-surface-variant">
+<span>RADAR: APG-78 LONGBOW</span>
+<span class="text-secondary font-semibold">AIR DOMINANCE</span>
+</div>
+</div>
+</div>
+<!-- Asset 4: CAESAR 155mm -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+<div class="relative w-full h-52 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Nexter Caesar 155mm self-propelled howitzer artillery truck deployed in tactical firing drill, deep green camouflage, heavy military field exercise atmosphere with dramatic dust clouds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM9QnKGS_i5FD5m4HACGfFzX3flYgvr2Ue4xpROHt7JLbwCiE0BRduzwS1kUGNcacr__jSojVt4Adyq8xM1kJce6fL7R6kVQwxQJC8uwy1ztjbsM_H_XhTPFRNSTM7IGp5mFDmuyv80gRl1o-G4SEEvyCclCII0RVymeWDywyDN2Nj9JOmcTukPJtfiO73gDZCbIGC-EOO-8O7iLerw6qaAdB-mQmu8tjYO4iV2a9K2b5RAMy5JgHM4w"/>
+<span class="absolute top-space-xs left-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-space-xs py-space-xxs rounded font-label-tactical text-label-tactical text-secondary">ARTILERI MEDAN</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">CAESAR 155mm SPH</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xxs">
+              Sistem artileri medan swagerak berkecepatan tinggi dengan jangkauan tembak presisi melebihi 40 kilometer.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-tactical text-label-tactical text-on-surface-variant">
+<span>JARAK: 42+ KM</span>
+<span class="text-secondary font-semibold">LONG RANGE</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- KILAS BERITA & SIARAN PERS RESMI DISPENAD -->
+<section class="w-full py-space-3xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">newspaper</span>
+<span class="font-label-tactical text-label-tactical text-secondary uppercase">Dinas Penerangan Angkatan Darat</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold uppercase">
+            Warta &amp; Siaran Pers Terkini
+          </h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-space-xxs rounded bg-primary text-on-primary font-label-tactical text-label-tactical uppercase font-bold">Semua</button>
+<button class="px-space-sm py-space-xxs rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-tactical text-label-tactical uppercase">Operasi &amp; Latihan</button>
+<button class="px-space-sm py-space-xxs rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-tactical text-label-tactical uppercase">Bakti TNI</button>
+</div>
+</div>
+<!-- News Bento Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Lead News Item (Large) -->
+<article class="lg:col-span-7 bg-surface-container rounded-xl overflow-hidden shadow-lg flex flex-col justify-between group">
+<div class="relative w-full h-80 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Joint multinational military training exercise Garuda Shield involving Indonesian Army soldiers and partner nations, soldiers advancing with tactical equipment in field condition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYewYlqWTtT5Xw-x3lcQIN8EJ2E66kYaeWdUXml6zSDIAT2_6tckMji4UH8fU5X3pNMwP4Sl56sN7QeoytsbIMprZGQajrhJOYQ1GdUs9BkUV8tLUJuQkmkeLX5sTHp1i0GZ2I0RIAgRJQVGDMImWfemtafFpdF1L2r655TKJmBKCD2Sd7AOF_nSriSAoHCnHZ5QoOeg_sZgonZGH3N-ZyNEr5h0CfpKHbEyVzN1lziQEE5yYfHOccOQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute top-space-md left-space-md flex gap-space-xs">
+<span class="bg-primary text-on-primary font-label-badge text-label-badge px-space-xs py-space-xxs rounded uppercase">SIARAN RESMI</span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-tactical text-label-tactical px-space-xs py-space-xxs rounded">LATIHAN BERSAMA</span>
+</div>
+</div>
+<div class="p-space-xl flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm font-label-tactical text-label-tactical text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">calendar_today</span>
+<span>18 OKTOBER 2024</span>
+<span>•</span>
+<span>PUSPEN TNI / DISPENAD</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary font-bold transition-colors">
+              Puncak Latihan Gabungan Super Garuda Shield 2024: Menunjukkan Interoperabilitas dan Kesiapan Pertahanan Matra Darat Terpadu
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              Latihan gabungan multi-nasional sukses digelar di Pusat Latihan Tempur Baturaja, mencakup penerjunan taktis lintas udara, operasi serangan amfibi gabungan, serta uji coba sistem komunikasi canggih C4ISR.
+            </p>
+<div class="pt-space-xs">
+<a class="inline-flex items-center gap-space-xs font-label-tactical text-label-tactical text-primary uppercase tracking-wider font-semibold" href="#">
+<span>Baca Selengkapnya</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Secondary News Items (List Stack) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Small News 1 -->
+<article class="bg-surface-container p-space-md rounded-xl shadow flex gap-space-md hover:bg-surface-container-high transition-colors group">
+<div class="w-32 h-28 rounded-lg overflow-hidden shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Indonesian Army engineers constructing a remote fresh water facility for rural Indonesian villagers, clear water flowing, humanitarian community assistance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARFoLJHsYt8kEjMYx4gGiljp2r0oPgON3qy-Izrxx0vkHQa7EDuse_cYbzCTP_lRmmvsh9Pci5vViydHF2my7QNt9ZmsD99qaRwqB2DMup-JXzbrriapXPyPTUo4E2reg-zkzMOHNW5V2wA30YmhEoz5GiBL2hHpsj-cxbNA5mTRLVKyHGIDc0XwCEZnMOrgOfpw-2ZXQIRtCvTmDySrIJvtNs5Wi9nosWNQBOS3ifplKQYNvozSiESQ"/>
+</div>
+<div class="flex flex-col justify-between min-w-0">
+<div class="flex flex-col gap-space-xxs">
+<span class="font-label-badge text-label-badge text-secondary uppercase">BAKTI SOSIAL</span>
+<h4 class="font-headline-sm text-body-lg text-on-surface font-bold line-clamp-2 group-hover:text-primary transition-colors">
+                  Program TNI AD Manunggal Air Sentuh 1.500 Titik Sumber Air Bersih di Pelosok Negeri
+                </h4>
+</div>
+<span class="font-label-tactical text-label-tactical text-on-surface-variant">15 OKT 2024 • TMMD REGULER</span>
+</div>
+</article>
+<!-- Small News 2 -->
+<article class="bg-surface-container p-space-md rounded-xl shadow flex gap-space-md hover:bg-surface-container-high transition-colors group">
+<div class="w-32 h-28 rounded-lg overflow-hidden shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Indonesian soldiers conducting border patrol along a dense tropical jungle river ridge at sunrise with tactical rucksacks and navigation gear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu5XFhOBCgEom18Qb3ruJh7SlOLJkUMiOyZrW6YbtormUgDwWmxekaaxrB6k0NOEgzqjr_zO3v02G8Z3bWXxbMKOF26SUXInUSH5nLFrKDFK0RuIjWXPBnyGEZJ0QSx188wCn2X4Lha31RG1Bu3950UoVASUsfqbLBO0MXldvegkNWZnwkEobdIoPxkidjDanbETHORGcSEuS95OO8M9GyADMMTCrtGKGnK1_zlpz4NWrh7sVxBJOxSQ"/>
+</div>
+<div class="flex flex-col justify-between min-w-0">
+<div class="flex flex-col gap-space-xxs">
+<span class="font-label-badge text-label-badge text-primary uppercase">PENGAMANAN PERBATASAN</span>
+<h4 class="font-headline-sm text-body-lg text-on-surface font-bold line-clamp-2 group-hover:text-primary transition-colors">
+                  Satgas Yonif Pamtas Gagalkan Penyelundupan Lintas Batas di Sektor Kalimantan Barat
+                </h4>
+</div>
+<span class="font-label-tactical text-label-tactical text-on-surface-variant">12 OKT 2024 • KODAM XII/TPR</span>
+</div>
+</article>
+<!-- Small News 3 -->
+<article class="bg-surface-container p-space-md rounded-xl shadow flex gap-space-md hover:bg-surface-container-high transition-colors group">
+<div class="w-32 h-28 rounded-lg overflow-hidden shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Military academy graduation parade of cadets in crisp formal dress uniform at Akmil Magelang grounds under clear blue sky, formal parade alignment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy4oV_6smimzCKzpAFx7iwUZxktJKBt0WIgYrrllJSwQaVP-tQstF-tgD0jHnzx0k_RFILE1nLGkidIItBlUNi5zDf_r2DLdFFsOQ5Fhky26MvXP4oCuqhMt3TbfFQNw4ogKNENHazzpEhbWvlC1aiE5NX15I9yJtoO9tNsUgDavOYLcSVgXO8lqE0uwX4Fhq2jZlOuSdXLWfSJZQ0nO-fskQ3BdbuaPHlFaKLcNuxT4JbmDYv1l9bXQ"/>
+</div>
+<div class="flex flex-col justify-between min-w-0">
+<div class="flex flex-col gap-space-xxs">
+<span class="font-label-badge text-label-badge text-secondary uppercase">PENDIDIKAN MILITER</span>
+<h4 class="font-headline-sm text-body-lg text-on-surface font-bold line-clamp-2 group-hover:text-primary transition-colors">
+                  Kasad Hadiri Wisuda Prabhatar Taruna Akademi Militer TA 2024 di Lembah Tidar Magelang
+                </h4>
+</div>
+<span class="font-label-tactical text-label-tactical text-on-surface-variant">08 OKT 2024 • AKMIL MAGELANG</span>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- BANNER CALL-TO-ACTION: REKRUTMEN PRAJURIT TNI AD 2025 -->
+<section class="w-full py-space-3xl relative overflow-hidden bg-surface-container-lowest" id="rekrutmen">
+<div class="max-w-container-max mx-auto px-gutter-desktop relative z-10">
+<div class="bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low p-space-xl md:p-space-2xl rounded-2xl shadow-2xl relative overflow-hidden">
+<!-- Accent Glow & Insignia Watermark -->
+<div class="absolute -right-16 -bottom-16 w-80 h-80 bg-primary/10 rounded-full filter blur-3xl pointer-events-none"></div>
+<div class="absolute top-0 right-12 w-48 h-48 opacity-10 pointer-events-none hidden md:block">
+<img alt="Insignia Watermark" class="w-full h-full object-contain" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+<div class="max-w-3xl flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs self-start bg-primary-container/30 px-space-sm py-space-xxs rounded">
+<span class="material-symbols-outlined text-primary text-base">military_tech</span>
+<span class="font-label-tactical text-label-tactical text-primary uppercase">PENERIMAAN PRAJURIT TA 2025 • GRATIS &amp; TRANSPARAN</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg md:text-display-lg text-on-surface font-extrabold uppercase leading-tight">
+            Panggilan Pengabdian: Menjadi Bhayangkari Negara di Matra Darat
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Bergabunglah bersama keluarga besar Tentara Nasional Indonesia Angkatan Darat. Jalur penerimaan dibuka untuk <strong>Taruna/Taruni Akademi Militer (Akmil)</strong>, <strong>Perwira Prajurit Karier (Pa PK)</strong>, <strong>Bintara PK</strong>, dan <strong>Tamtama PK TNI AD</strong>. Tanpa dipungut biaya apapun.
+          </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md py-space-xs font-label-tactical text-label-tactical">
+<div class="bg-surface-container-lowest/60 p-space-sm rounded">
+<span class="text-on-surface-variant block">AKADEMI MILITER</span>
+<span class="text-primary font-bold">DIBUKA MARET 2025</span>
+</div>
+<div class="bg-surface-container-lowest/60 p-space-sm rounded">
+<span class="text-on-surface-variant block">BINTARA PK</span>
+<span class="text-secondary font-bold">DIBUKA MEI 2025</span>
+</div>
+<div class="bg-surface-container-lowest/60 p-space-sm rounded">
+<span class="text-on-surface-variant block">TAMTAMA PK</span>
+<span class="text-primary font-bold">GEL. I &amp; GEL. II</span>
+</div>
+<div class="bg-surface-container-lowest/60 p-space-sm rounded">
+<span class="text-on-surface-variant block">PA PK KHUSUS</span>
+<span class="text-secondary font-bold">LULUSAN D4 / S1</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-fixed text-on-primary font-headline-sm text-label-tactical font-bold px-space-xl py-space-sm rounded uppercase tracking-wider shadow-lg transition-all" href="https://ad.rekrutmen-tni.mil.id" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">how_to_reg</span>
+<span>Daftar Online di Portal Resmi Rekrutmen</span>
+</a>
+<a class="inline-flex items-center gap-space-xs text-on-surface hover:text-primary bg-surface-container-highest px-space-md py-space-sm rounded font-label-tactical text-label-tactical uppercase tracking-wider transition-colors" href="#">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Unduh Panduan &amp; Persyaratan</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest mt-space-3xl"><div class="max-w-container-max mx-auto px-gutter-desktop py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl pb-space-2xl"><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">TNI ANGKATAN DARAT</span><span class="font-label-badge text-label-badge text-secondary-fixed-dim">KARTIKA EKA PAKSI</span><p class="font-body-sm text-body-sm text-on-surface-variant">Markas Besar Angkatan Darat, Jl. Veteran No. 5, Gambir, Jakarta Pusat, DKI Jakarta 10110.</p><div class="flex items-center gap-space-xs mt-space-xs"><span class="material-symbols-outlined text-primary text-base">security</span><span class="font-label-tactical text-label-tactical text-on-surface-variant">BSSN TERVERIFIKASI &amp; TERENKRIPSI</span></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-tactical text-label-tactical text-primary mb-space-xs">LEMBAGA &amp; KOTAMA</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Kostrad (Komando Cadangan Strategis)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Kopassus (Komando Pasukan Khusus)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Kodiklatad (Pendidikan &amp; Latihan)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Pusterad (Teritorial Angkatan Darat)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Puspomad (Polisi Militer Angkatan Darat)</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-tactical text-label-tactical text-primary mb-space-xs">LAYANAN PUBLIK</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Penerimaan Calon Prajurit (Rekrutmen)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Pejabat Pengelola Informasi &amp; Dokumen (PPID)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">WBS (Whistleblowing System) Mabesad</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Pengadaan Barang &amp; Jasa Elektronik (LPSE)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Dispenad (Dinas Penerangan TNI AD)</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-tactical text-label-tactical text-primary">SALURAN KOMUNIKASI</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-base">phone_in_talk</span><span class="font-label-tactical text-label-tactical text-on-surface">Call Center: (021) 38998000</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-base">mail</span><span class="font-label-tactical text-label-tactical text-on-surface">kontak@tniad.mil.id</span></div><div class="flex items-center gap-space-xs mt-space-xs"><span class="material-symbols-outlined text-secondary text-base">shield</span><span class="material-symbols-outlined text-secondary text-base">verified_user</span><span class="material-symbols-outlined text-secondary text-base">lock</span><span class="font-label-tactical text-label-tactical text-secondary">KOMLEKAD SECURE CHANNEL</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Markas Besar Tentara Nasional Indonesia Angkatan Darat. Hak Cipta Dilindungi Undang-Undang Republik Indonesia.</span><div class="flex items-center gap-space-md"><span class="font-label-tactical text-label-tactical text-outline hover:text-on-surface cursor-pointer">KEBIJAKAN PRIVASI</span><span class="font-label-tactical text-label-tactical text-outline hover:text-on-surface cursor-pointer">SYARAT &amp; KETENTUAN</span><span class="font-label-tactical text-label-tactical text-outline hover:text-on-surface cursor-pointer">PETA SITUS MILITER</span></div></div></div></footer></body></html>
