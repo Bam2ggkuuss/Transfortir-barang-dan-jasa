@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary-fixed": "#00201a",
+          "on-primary": "#00382f",
+          "on-surface": "#dbe1ff",
+          "surface-container-low": "#131a33",
+          "surface-container-lowest": "#050d25",
+          "outline-variant": "#3a4a46",
+          "secondary": "#4cd6fb",
+          "error-container": "#93000a",
+          "on-error-container": "#ffdad6",
+          "on-background": "#dbe1ff",
+          "tertiary": "#fff5ee",
+          "inverse-surface": "#dbe1ff",
+          "on-tertiary-container": "#8a5200",
+          "primary-fixed": "#26fedc",
+          "on-primary-fixed-variant": "#005144",
+          "on-secondary-container": "#003f4e",
+          "primary-fixed-dim": "#00dfc1",
+          "on-secondary-fixed": "#001f27",
+          "inverse-primary": "#006b5b",
+          "tertiary-fixed-dim": "#ffb86b",
+          "surface-dim": "#0a122a",
+          "surface-variant": "#2c344d",
+          "primary-container": "#00f5d4",
+          "on-primary-container": "#006c5c",
+          "primary": "#d7fff3",
+          "surface-container-high": "#212942",
+          "surface-container-highest": "#2c344d",
+          "on-secondary-fixed-variant": "#004e5f",
+          "on-tertiary-fixed": "#2c1700",
+          "secondary-fixed": "#b3ebff",
+          "background": "#0a122a",
+          "on-surface-variant": "#b9cac4",
+          "surface-bright": "#313852",
+          "secondary-fixed-dim": "#4cd6fb",
+          "secondary-container": "#00b2d6",
+          "surface": "#0a122a",
+          "surface-tint": "#00dfc1",
+          "outline": "#83948f",
+          "on-error": "#690005",
+          "tertiary-container": "#ffd2a6",
+          "surface-container": "#171e37",
+          "on-secondary": "#003642",
+          "tertiary-fixed": "#ffdcbc",
+          "error": "#ffb4ab",
+          "on-tertiary": "#492900",
+          "on-tertiary-fixed-variant": "#683d00",
+          "inverse-on-surface": "#282f49"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "margin-mobile": "1rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem",
+          "space-xl": "2.5rem",
+          "space-sm": "0.5rem",
+          "margin": "2rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-badge": [
+            "JetBrains Mono"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "label-code": [
+            "JetBrains Mono"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-badge": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-code": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><img alt="A sleek, premium, elegant and dynamic cybersecurity emblem logo featuring an iconic stylized Philippine/Sulawesi tarsier animal mascot. The tarsier has striking large glowing neon cyan/emerald eyes, watchful and intelligent nocturnal cybersecurity guardian motif, perched on a subtle digital circuit branch. Modern tech aesthetics with sharp geometric clean lines, glowing teal accents (#00f5d4) and electric cyan (#00b4d8) on a deep dark midnight slate background (#0a122a). Beneath the mascot emblem, elegant and bold futuristic sans-serif typography with the text 'Syndicate-2'. Masterpiece vector logo emblem, high contrast, balanced proportions, minimalist yet powerful branding badge.. Design context: - Primary color: #00f5d4
+- Font: plusJakartaSans
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VLJmrbYXb4bkKnUMx-V2PmCcEnDT-U4LQz6E9HfWVUyIP1zNUeOEusLEcQYj8Vi2gPPzErQsvJDjD_TpIcLuoiV-LtSaIu-ZMotJ9tRHt8sQIYqGRcWGtfQLhfulxK_90qjJkvU3dzPcdkNS7jCUuO8vGgU68k13E6IQxEdNw6_dG7SF1XXV3j5niHV4jxIamCp8uC3nB9J1riT4DHA6VVNB6wtL0zjPznsrqtfirV0tI2ZNxW9WBHxilk"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-wider text-primary">SINDIKAT - 2</span><span class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase tracking-widest">Tactical Cyber Division</span></div></div><nav class="hidden xl:flex items-center gap-space-sm p-space-xs bg-surface-container-lowest/80 rounded-xl" data-active-classes="bg-surface-container-high text-primary font-semibold rounded-lg"><a aria-current="page" class="px-space-md py-space-xs transition-all bg-surface-container-high text-primary font-semibold rounded-lg" data-path="beranda" href="#">Beranda</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-body-sm text-body-sm" data-path="tentang-dan-visi-misi" href="#">Tentang &amp; Visi Misi</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-body-sm text-body-sm" data-path="personel" href="#">Personel</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-body-sm text-body-sm" data-path="kode-etik-dan-komunikasi" href="#">Kode Etik &amp; Komunikasi</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-body-sm text-body-sm" data-path="program-kerja" href="#">Program Kerja</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-body-sm text-body-sm" data-path="deklarasi" href="#">Deklarasi</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-badge text-label-badge text-primary uppercase">ACTIVE SQUADRON</span></div><a class="hidden md:inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-semibold hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-colors shadow-[0_0_16px_rgba(0,245,212,0.25)]" data-path="buku-panduan-dan-piagam" href="#">Buku Panduan &amp; Piagam</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO & METRICS -->
+<section class="relative w-full px-margin py-space-xl overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/3 -left-20 w-80 h-80 bg-tertiary-fixed-dim/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative max-w-7xl mx-auto flex flex-col items-center text-center">
+<!-- Mascot Badge & Header Title -->
+<div class="inline-flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container-high mb-space-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase tracking-widest">DOKUMEN DOKTRIN EKSEKUTIF RESMI</span>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-center gap-space-lg mb-space-md">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary-container to-tertiary-fixed-dim rounded-full blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+<img alt="Emblem Tarsius SINDIKAT-2" class="relative w-28 h-28 md:w-36 md:h-36 object-contain rounded-full bg-surface-container-lowest p-2 shadow-xl" src="https://lh3.googleusercontent.com/aida/AEtjO1VLJmrbYXb4bkKnUMx-V2PmCcEnDT-U4LQz6E9HfWVUyIP1zNUeOEusLEcQYj8Vi2gPPzErQsvJDjD_TpIcLuoiV-LtSaIu-ZMotJ9tRHt8sQIYqGRcWGtfQLhfulxK_90qjJkvU3dzPcdkNS7jCUuO8vGgU68k13E6IQxEdNw6_dG7SF1XXV3j5niHV4jxIamCp8uC3nB9J1riT4DHA6VVNB6wtL0zjPznsrqtfirV0tI2ZNxW9WBHxilk"/>
+</div>
+<div class="text-center md:text-left">
+<h1 class="font-headline-lg text-headline-lg md:text-[48px] text-primary tracking-tight font-bold">
+            SINDIKAT - 2
+          </h1>
+<p class="font-headline-sm text-headline-sm text-tertiary-fixed-dim mt-1 font-medium">
+            Wadah Solidaritas, Integritas, Profesionalisme &amp; Keunggulan Strategis
+          </p>
+</div>
+</div>
+<!-- Full Executive Introduction Text -->
+<div class="max-w-4xl bg-surface-container-low/90 backdrop-blur-md rounded-xl p-space-lg shadow-md my-space-md text-left md:text-center">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+          SINDIKAT - 2 merupakan wadah sarana strategis dalam membangun solidaritas, meningkatkan kompetensi, mengembangkan kemampuan individu, serta memperkuat kerja sama antaranggota. Ditegakkan berlandaskan nilai luhur <span class="text-tertiary-fixed font-semibold">integritas, disiplin, tanggung jawab, loyalitas, kreativitas</span>, dan <span class="text-primary-container font-semibold">profesionalisme</span> guna mewujudkan daya saing unggul dan kehormatan korps.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-space-md mt-space-sm mb-space-xl">
+<a class="px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-md font-semibold hover:bg-primary-fixed-dim transition-all duration-200 shadow-md flex items-center gap-space-xs" href="#personel">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+          Jelajahi Personel
+        </a>
+<a class="px-space-lg py-space-sm rounded-lg bg-surface-container-highest text-tertiary-fixed font-headline-sm text-body-md font-semibold hover:bg-surface-bright transition-all duration-200 shadow-sm flex items-center gap-space-xs" href="#deklarasi">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+          Baca Deklarasi Sumpah
+        </a>
+</div>
+<!-- Key Metrics Banner -->
+<div class="w-full grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-xs">
+<div class="bg-surface-container p-space-md rounded-xl shadow-md text-left flex items-start gap-space-md">
+<div class="p-space-sm rounded-lg bg-primary-container/10 text-primary-container">
+<span class="material-symbols-outlined text-[28px]">shield</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-bold">6</div>
+<div class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase tracking-wider">Nilai Pokok</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Integritas, Disiplin, Tanggung Jawab, Loyalitas, Kreativitas, Profesionalisme.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-md text-left flex items-start gap-space-md">
+<div class="p-space-sm rounded-lg bg-secondary-container/10 text-secondary">
+<span class="material-symbols-outlined text-[28px]">account_tree</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-secondary font-bold">5</div>
+<div class="font-label-badge text-label-badge text-secondary-fixed uppercase tracking-wider">Pilar Program Kerja</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Development, Team Building, Project, Competition, &amp; Dokumentasi Terpusat.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-md text-left flex items-start gap-space-md">
+<div class="p-space-sm rounded-lg bg-tertiary-container/10 text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[28px]">military_tech</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-tertiary-fixed-dim font-bold">1</div>
+<div class="font-label-badge text-label-badge text-tertiary-fixed uppercase tracking-wider">Kesatuan Komando</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Struktur hierarki taktis operasional terkoordinasi lintas matra kedinasan.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: MAKSUD & TUJUAN -->
+<section class="w-full px-margin py-space-xl bg-surface-container-lowest/60">
+<div class="max-w-7xl mx-auto">
+<div class="mb-space-lg">
+<span class="font-label-badge text-label-badge text-primary-container tracking-widest uppercase">Landasan Filosofis</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Maksud &amp; Tujuan Pembentukan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Penetapan kerangka kerja komprehensif bagi pembinaan kapabilitas serta integritas anggota SINDIKAT - 2.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg items-start">
+<!-- 2.1 Maksud Pembentukan -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-space-sm">
+<span class="w-1.5 h-6 bg-tertiary-fixed-dim rounded-full"></span>
+<h3 class="font-headline-sm text-headline-sm text-tertiary-fixed">2.1 Maksud Pembentukan</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fondasi utama pembentukan divisi sebagai instrumen akselerasi potensi kolektif:</p>
+<div class="space-y-space-sm">
+<div class="flex items-start gap-space-sm bg-surface-container-high p-space-sm rounded-lg">
+<span class="font-label-badge text-label-badge px-2 py-1 rounded bg-tertiary-container text-on-tertiary-container font-bold">01</span>
+<div>
+<h4 class="font-headline-sm text-body-md font-semibold text-on-surface">Membangun Hubungan &amp; Solidaritas</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mempererat tali kekeluargaan, saling percaya, dan solidaritas taktis tanpa sekat.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-container-high p-space-sm rounded-lg">
+<span class="font-label-badge text-label-badge px-2 py-1 rounded bg-tertiary-container text-on-tertiary-container font-bold">02</span>
+<div>
+<h4 class="font-headline-sm text-body-md font-semibold text-on-surface">Meningkatkan Kemampuan &amp; Kompetensi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mengasah keterampilan taktis, teknis analis, serta kepemimpinan lapangan modern.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-container-high p-space-sm rounded-lg">
+<span class="font-label-badge text-label-badge px-2 py-1 rounded bg-tertiary-container text-on-tertiary-container font-bold">03</span>
+<div>
+<h4 class="font-headline-sm text-body-md font-semibold text-on-surface">Budaya Kerja Disiplin &amp; Profesional</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Menerapkan etos dedikasi tinggi, ketepatan waktu, dan akuntabilitas penuh pada penugasan.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-container-high p-space-sm rounded-lg">
+<span class="font-label-badge text-label-badge px-2 py-1 rounded bg-tertiary-container text-on-tertiary-container font-bold">04</span>
+<div>
+<h4 class="font-headline-sm text-body-md font-semibold text-on-surface">Wadah Transfer Pengetahuan &amp; Pengalaman</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ruang transfer keilmuan intelijen, komando maritim, artileri, dan operasi darat.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-container-high p-space-sm rounded-lg">
+<span class="font-label-badge text-label-badge px-2 py-1 rounded bg-tertiary-container text-on-tertiary-container font-bold">05</span>
+<div>
+<h4 class="font-headline-sm text-body-md font-semibold text-on-surface">Identitas Karakter Kelompok</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Membentuk jati diri berkarakter tangguh, tenang bertindak, dan tajam dalam presisi hasil.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 2.2 Tujuan Utama -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-space-sm">
+<span class="w-1.5 h-6 bg-primary-container rounded-full"></span>
+<h3 class="font-headline-sm text-headline-sm text-primary">2.2 Tujuan Utama (8 Poin Capaian)</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Target keluaran strategis organisasi bagi seluruh personel:</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-high p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">check_circle</span>
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase">01. Skill Mastery</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Meningkatkan kompetensi personel secara berkesinambungan.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">check_circle</span>
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase">02. Synergy</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Mewujudkan kerja sama tim yang solid, adaptif, dan efektif.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">check_circle</span>
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase">03. Accountability</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Menumbuhkan rasa tanggung jawab tinggi terhadap amanah tugas.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">check_circle</span>
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase">04. Honor Code</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Menanamkan kedisiplinan dan integritas dalam setiap aktivitas.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">check_circle</span>
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase">05. Breakthrough</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Mendorong kreativitas dan inovasi di berbagai pemecahan masalah.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">check_circle</span>
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase">06. Ecosystem</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Menciptakan lingkungan kerja yang suportif, kondusif, dan produktif.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">check_circle</span>
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase">07. Lifelong Growth</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Mendorong semangat terus belajar dan berkembang tanpa henti.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">check_circle</span>
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase">08. Prestige</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Membangun reputasi positif, terpercaya, dan kredibel bagi divisi.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: VISI & MISI -->
+<section class="w-full px-margin py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="text-center max-w-3xl mx-auto">
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim tracking-widest uppercase">Kompas Operasional</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Visi &amp; Misi Strategis</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Arah pandang dan 6 pilar eksekusi SINDIKAT - 2 dalam menggapai keunggulan masa depan.</p>
+</div>
+<!-- Visi Card -->
+<div class="relative overflow-hidden bg-gradient-to-r from-surface-container to-surface-container-high p-space-xl rounded-xl shadow-xl">
+<div class="absolute -right-10 -bottom-10 w-48 h-48 bg-tertiary-container/10 rounded-full blur-2xl"></div>
+<div class="flex flex-col md:flex-row items-center gap-space-lg relative z-10">
+<div class="p-space-md rounded-xl bg-tertiary-container text-on-tertiary-container shrink-0">
+<span class="material-symbols-outlined text-[40px]">visibility</span>
+</div>
+<div>
+<div class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase tracking-widest">VISI RESMI SINDIKAT - 2</div>
+<blockquote class="font-headline-md text-headline-md text-tertiary italic mt-2 leading-relaxed">
+              "Menjadi kelompok yang solid, kompeten, berintegritas, adaptif, dan mampu menghasilkan karya serta prestasi melalui kolaborasi dan pengembangan potensi setiap personel."
+            </blockquote>
+</div>
+</div>
+</div>
+<!-- Misi 6 Pilar -->
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container">diamond</span>
+          6 Pilar Misi Inti
+        </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-code text-label-code text-tertiary-fixed-dim bg-surface-container-high px-2 py-0.5 rounded">PILAR 01</span>
+<span class="material-symbols-outlined text-primary-container">groups</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Solidaritas</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Membangun rasa kebersamaan, kepedulian, dan saling mendukung antarsesama anggota dalam suka maupun duka penugasan.</p>
+</div>
+<div class="w-full h-1 bg-tertiary-fixed-dim/30 rounded-full mt-space-md"></div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-code text-label-code text-primary bg-surface-container-high px-2 py-0.5 rounded">PILAR 02</span>
+<span class="material-symbols-outlined text-secondary">trending_up</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Kompetensi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Meningkatkan pengetahuan, keterampilan teknis, serta wawasan melalui pembelajaran berkelanjutan dan pelatihan intensif.</p>
+</div>
+<div class="w-full h-1 bg-primary/30 rounded-full mt-space-md"></div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-code text-label-code text-tertiary-fixed-dim bg-surface-container-high px-2 py-0.5 rounded">PILAR 03</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim">verified_user</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Integritas</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Menjunjung tinggi kejujuran, etika kode kehormatan, dan tanggung jawab dalam setiap langkah serta keputusan.</p>
+</div>
+<div class="w-full h-1 bg-tertiary-fixed-dim/30 rounded-full mt-space-md"></div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-code text-label-code text-primary bg-surface-container-high px-2 py-0.5 rounded">PILAR 04</span>
+<span class="material-symbols-outlined text-primary-container">alarm_on</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Disiplin</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Menumbuhkan komitmen kuat terhadap tata tertib, prosedur operasional, dan ketepatan penyelesaian misi.</p>
+</div>
+<div class="w-full h-1 bg-primary/30 rounded-full mt-space-md"></div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-code text-label-code text-tertiary-fixed-dim bg-surface-container-high px-2 py-0.5 rounded">PILAR 05</span>
+<span class="material-symbols-outlined text-secondary">psychology</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Inovasi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Mendorong terciptanya gagasan baru yang kreatif, solutif, serta relevan menghadapi tantangan zaman cyber modern.</p>
+</div>
+<div class="w-full h-1 bg-tertiary-fixed-dim/30 rounded-full mt-space-md"></div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-code text-label-code text-primary bg-surface-container-high px-2 py-0.5 rounded">PILAR 06</span>
+<span class="material-symbols-outlined text-primary-container">hub</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Kolaborasi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Membangun kerja sama yang harmonis, sinergis, dan saling melengkapi demi kesuksesan target bersama.</p>
+</div>
+<div class="w-full h-1 bg-primary/30 rounded-full mt-space-md"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: DAFTAR PERSONEL & STRUKTUR KOMANDO -->
+<section class="w-full px-margin py-space-xl bg-surface-container-lowest/70" id="personel">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-badge text-label-badge text-primary-container tracking-widest uppercase">Korp Personel Resmi</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Daftar Personel &amp; Struktur Komando</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Data autentik kedinasan dan penempatan peran taktis skuadron.</p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container px-space-md py-space-xs rounded-lg text-tertiary-fixed-dim text-body-sm font-headline-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+          Terverifikasi Komando SINDIKAT - 2
+        </div>
+</div>
+<!-- Personnel Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- a. MASTER / LEADER -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-lg flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 px-space-md py-1 bg-tertiary-container text-on-tertiary-container font-label-badge text-label-badge uppercase font-bold rounded-bl-lg">
+            KOMANDO UTAMA
+          </div>
+<div>
+<div class="flex items-center gap-space-md mb-space-md">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-tertiary-fixed-dim shadow-inner">
+<span class="material-symbols-outlined text-[32px]">military_tech</span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed uppercase">Role 01 / Leader</span>
+<h3 class="font-headline-sm text-headline-sm text-tertiary font-bold">MASTER / LEADER</h3>
+</div>
+</div>
+<div class="space-y-space-xs text-body-sm text-on-surface-variant mb-space-md">
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Nama:</span>
+<span class="text-on-surface font-semibold text-right">Wirangga Agum Efendi</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Pangkat/NRP:</span>
+<span class="text-on-surface font-semibold text-right font-label-code">Kapten Arh / 11200016961096</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Jabatan:</span>
+<span class="text-on-surface font-semibold text-right">Pasiintel</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Satuan:</span>
+<span class="text-on-surface font-semibold text-right">Yonarhanud 11/WBY</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Status:</span>
+<span class="text-on-surface font-semibold text-right">Belum Menikah</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Alamat:</span>
+<span class="text-on-surface font-semibold text-right truncate max-w-[180px]">Asmil Yonarhanud 11/WBY Binjai</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg text-body-sm text-primary">
+<span class="font-semibold text-tertiary-fixed">Peran Taktis:</span> Pemimpin utama yang bertanggung jawab terhadap arah kebijakan, strategi menyeluruh, dan keputusan tertinggi kelompok.
+          </div>
+</div>
+<!-- b. VICE MASTER -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 px-space-md py-1 bg-surface-container-highest text-secondary font-label-badge text-label-badge uppercase font-bold rounded-bl-lg">
+            WAKIL KOMANDO
+          </div>
+<div>
+<div class="flex items-center gap-space-md mb-space-md">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary shadow-inner">
+<span class="material-symbols-outlined text-[32px]">shield_person</span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge text-secondary-fixed uppercase">Role 02 / Vice</span>
+<h3 class="font-headline-sm text-headline-sm text-secondary font-bold">VICE MASTER</h3>
+</div>
+</div>
+<div class="space-y-space-xs text-body-sm text-on-surface-variant mb-space-md">
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Status Kesiapan:</span>
+<span class="text-secondary font-semibold">Tersedia / Aktif Koordinasi</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Tugas Koordinasi:</span>
+<span class="text-on-surface font-semibold">Wakil Pelaksana Harian</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Delegasi:</span>
+<span class="text-on-surface font-semibold">Otoritas Sekunder Penuh</span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded text-center text-outline-variant font-label-code text-body-sm py-space-md">
+                [JALUR SUKSESI KOMANDO TERORGANISIR]
+              </div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg text-body-sm text-on-surface">
+<span class="font-semibold text-secondary">Peran Taktis:</span> Membantu Master dalam menjalankan koordinasi dinamis dan memegang mandat penuh menggantikan peran Master apabila berhalangan.
+          </div>
+</div>
+<!-- c. COMMAND / COORDINATOR -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 px-space-md py-1 bg-surface-container-highest text-primary-container font-label-badge text-label-badge uppercase font-bold rounded-bl-lg">
+            KOORDINATOR OPS
+          </div>
+<div>
+<div class="flex items-center gap-space-md mb-space-md">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container shadow-inner">
+<span class="material-symbols-outlined text-[32px]">lan</span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge text-primary-fixed uppercase">Role 03 / Liaison</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">COORDINATOR</h3>
+</div>
+</div>
+<div class="space-y-space-xs text-body-sm text-on-surface-variant mb-space-md">
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Nama:</span>
+<span class="text-on-surface font-semibold text-right">Didi Suseno</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Pangkat/NRP:</span>
+<span class="text-on-surface font-semibold text-right font-label-code">Lettu Laut (P) 24144/P</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Jabatan:</span>
+<span class="text-on-surface font-semibold text-right truncate max-w-[170px]">Paurpultaops Pusdalops</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Satuan Asal:</span>
+<span class="text-on-surface font-semibold text-right">Pushidrosal</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Status:</span>
+<span class="text-on-surface font-semibold text-right">K-3</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Alamat:</span>
+<span class="text-on-surface font-semibold text-right truncate max-w-[170px]">Desa Banjaran, Brebes, Jateng</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg text-body-sm text-on-surface">
+<span class="font-semibold text-primary-container">Peran Taktis:</span> Mengatur koordinasi kegiatan dan memastikan komunikasi lintas bagian berjalan efektif dan sinkron.
+          </div>
+</div>
+<!-- d. INTELLIGENCE / ANALYST -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 px-space-md py-1 bg-surface-container-highest text-tertiary-fixed-dim font-label-badge text-label-badge uppercase font-bold rounded-bl-lg">
+            INTEL &amp; ANALISIS
+          </div>
+<div>
+<div class="flex items-center gap-space-md mb-space-md">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-tertiary-fixed-dim shadow-inner">
+<span class="material-symbols-outlined text-[32px]">manage_search</span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed uppercase">Role 04 / Intellect</span>
+<h3 class="font-headline-sm text-headline-sm text-tertiary-fixed font-bold">INTELLIGENCE / ANALYST</h3>
+</div>
+</div>
+<div class="space-y-space-xs text-body-sm text-on-surface-variant mb-space-md">
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Fungsi Divisi:</span>
+<span class="text-tertiary-fixed font-semibold">Information &amp; Synthesis</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Spesialisasi:</span>
+<span class="text-on-surface font-semibold">Analisis Data Strategis</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Siklus Laporan:</span>
+<span class="text-on-surface font-semibold">Terkurasi &amp; Terenkripsi</span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded text-center text-outline-variant font-label-code text-body-sm py-space-md">
+                [PENGUMPULAN DATA &amp; PENYUSUNAN INTELIJEN]
+              </div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg text-body-sm text-on-surface">
+<span class="font-semibold text-tertiary-fixed-dim">Peran Taktis:</span> Bertugas melakukan pengumpulan informasi, analisis situasi mendalam, dokumentasi analitik, dan penyusunan data operasional.
+          </div>
+</div>
+<!-- e. TECHNICAL / SPECIALIST -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 px-space-md py-1 bg-surface-container-highest text-secondary-fixed-dim font-label-badge text-label-badge uppercase font-bold rounded-bl-lg">
+            SPESIALIS TEKNIS
+          </div>
+<div>
+<div class="flex items-center gap-space-md mb-space-md">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary-fixed-dim shadow-inner">
+<span class="material-symbols-outlined text-[32px]">terminal</span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge text-secondary-fixed uppercase">Role 05 / Engineering</span>
+<h3 class="font-headline-sm text-headline-sm text-secondary font-bold">TECHNICAL / SPECIALIST</h3>
+</div>
+</div>
+<div class="space-y-space-xs text-body-sm text-on-surface-variant mb-space-md">
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Nama:</span>
+<span class="text-on-surface font-semibold text-right">Doni Risa T.</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Pangkat/NRP:</span>
+<span class="text-on-surface font-semibold text-right font-label-code">Letda Laut (T) 27001/P</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Jabatan:</span>
+<span class="text-on-surface font-semibold text-right">Kadiv MPK KRI SURA-802</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Satuan:</span>
+<span class="text-on-surface font-semibold text-right">Satuan Kapal Patroli</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Lokasi Tugas:</span>
+<span class="text-on-surface font-semibold text-right truncate max-w-[180px]">Sorong (Tanah Mutiara)</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg text-body-sm text-on-surface">
+<span class="font-semibold text-secondary-fixed-dim">Peran Taktis:</span> Personel pemilik keahlian teknis khusus yang bertanggung jawab penuh terhadap kesiapan infrastruktur dan aspek teknis kegiatan.
+          </div>
+</div>
+<!-- f. OPERATIONS -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 px-space-md py-1 bg-surface-container-highest text-primary font-label-badge text-label-badge uppercase font-bold rounded-bl-lg">
+            EKSEKUSI LAPANGAN
+          </div>
+<div>
+<div class="flex items-center gap-space-md mb-space-md">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[32px]">stream</span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge text-primary-fixed uppercase">Role 06 / Ops Lead</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">OPERATIONS</h3>
+</div>
+</div>
+<div class="space-y-space-xs text-body-sm text-on-surface-variant mb-space-md">
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Nama:</span>
+<span class="text-on-surface font-semibold text-right">Edi Hartanto</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Pangkat/NRP:</span>
+<span class="text-on-surface font-semibold text-right font-label-code">Letda Inf / 21070542860386</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Jabatan:</span>
+<span class="text-on-surface font-semibold text-right">Dantim 3 BKI A</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Satuan:</span>
+<span class="text-on-surface font-semibold text-right truncate max-w-[170px]">Deninteldam XIII/Merdeka</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Status:</span>
+<span class="text-on-surface font-semibold text-right">K-1</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Alamat:</span>
+<span class="text-on-surface font-semibold text-right truncate max-w-[170px]">Asrama Pakowa 13 Manado</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg text-body-sm text-on-surface">
+<span class="font-semibold text-primary">Peran Taktis:</span> Mengatur pelaksanaan kegiatan serta memastikan rencana operasi dapat dijalankan secara presisi dan tepat tempo.
+          </div>
+</div>
+<!-- g. CREATIVE & MEDIA -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 px-space-md py-1 bg-surface-container-highest text-tertiary-fixed font-label-badge text-label-badge uppercase font-bold rounded-bl-lg">
+            KREATIF &amp; IDENTITAS
+          </div>
+<div>
+<div class="flex items-center gap-space-md mb-space-md">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-tertiary-fixed shadow-inner">
+<span class="material-symbols-outlined text-[32px]">brush</span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase">Role 07 / Creative</span>
+<h3 class="font-headline-sm text-headline-sm text-tertiary-fixed font-bold">CREATIVE &amp; MEDIA</h3>
+</div>
+</div>
+<div class="space-y-space-xs text-body-sm text-on-surface-variant mb-space-md">
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Nama:</span>
+<span class="text-on-surface font-semibold text-right">Abdul Ganif Rasit</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Pangkat/NRP:</span>
+<span class="text-on-surface font-semibold text-right font-label-code">Letda Arh / 21110101340792</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Jabatan:</span>
+<span class="text-on-surface font-semibold text-right truncate max-w-[170px]">Paurnik 2 Bengharsistarudal</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Satuan:</span>
+<span class="text-on-surface font-semibold text-right truncate max-w-[170px]">Bengpusarhanud Malang</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Status:</span>
+<span class="text-on-surface font-semibold text-right">K-1</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded flex justify-between">
+<span class="text-outline">Alamat:</span>
+<span class="text-on-surface font-semibold text-right truncate max-w-[170px]">Asmil Bengpusarhanud Malang</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg text-body-sm text-on-surface">
+<span class="font-semibold text-tertiary-fixed">Peran Taktis:</span> Bertanggung jawab terhadap desain visual, dokumentasi media, publikasi profil, dan reputasi grafis SINDIKAT - 2.
+          </div>
+</div>
+<!-- h. MEMBER -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between relative overflow-hidden md:col-span-2 lg:col-span-2">
+<div class="absolute top-0 right-0 px-space-md py-1 bg-surface-container-highest text-primary-container font-label-badge text-label-badge uppercase font-bold rounded-bl-lg">
+            KORPS CADANGAN &amp; PENDUKUNG
+          </div>
+<div>
+<div class="flex items-center gap-space-md mb-space-md">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container shadow-inner">
+<span class="material-symbols-outlined text-[32px]">diversity_3</span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge text-primary-fixed uppercase">Role 08 / Skuadron</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">MEMBER / SELURUH ANGGOTA</h3>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm text-body-sm mb-space-md">
+<div class="bg-surface-container-high p-space-sm rounded-lg">
+<div class="font-headline-sm text-body-md text-tertiary font-semibold mb-1">Partisipasi Aktif</div>
+<p class="text-on-surface-variant">Menghadiri, memberikan saran konstruktif, serta mengeksekusi misi yang diamanahkan pimpinan.</p>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg">
+<div class="font-headline-sm text-body-md text-primary font-semibold mb-1">Kekuatan Kolektif</div>
+<p class="text-on-surface-variant">Mendukung terwujudnya keunggulan tim tanpa ego sektoral demi kejayaan korps bersama.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg text-body-sm text-on-surface">
+<span class="font-semibold text-primary-container">Mandat Dasar:</span> Seluruh anggota yang berperan aktif dalam setiap agenda kegiatan dan mendukung penuh ketercapaian tujuan organisasi.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: MATRIKS TUGAS DAN TANGGUNG JAWAB -->
+<section class="w-full px-margin py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim tracking-widest uppercase">Akuntabilitas Kerja</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Matriks Tugas &amp; Tanggung Jawab</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Distribusi beban kewajiban spesifik untuk menjamin zero-overlap dan efektivitas optimal.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Master -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs text-tertiary-fixed-dim font-headline-sm text-body-lg font-bold mb-space-sm">
+<span class="material-symbols-outlined">star</span>
+            Master (4 Tugas Pokok)
+          </div>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim mt-0.5">arrow_forward</span>
+<span>Menentukan arah kebijakan dan visi strategis kelompok.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim mt-0.5">arrow_forward</span>
+<span>Memimpin musyawarah dan mengambil keputusan krusial.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim mt-0.5">arrow_forward</span>
+<span>Menjaga solidaritas internal dan wibawa kelompok.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim mt-0.5">arrow_forward</span>
+<span>Mengevaluasi performa kerja seluruh lini personel.</span>
+</li>
+</ul>
+</div>
+<!-- Vice Master -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs text-secondary font-headline-sm text-body-lg font-bold mb-space-sm">
+<span class="material-symbols-outlined">verified</span>
+            Vice Master (3 Tugas Pokok)
+          </div>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">arrow_forward</span>
+<span>Mendampingi Master dalam memonitor roda organisasi.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">arrow_forward</span>
+<span>Mengambil alih kendali kepemimpinan saat mandat dilimpahkan.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">arrow_forward</span>
+<span>Menjembatani resolusi kendala internal secara harmonis.</span>
+</li>
+</ul>
+</div>
+<!-- Coordinator -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs text-primary-container font-headline-sm text-body-lg font-bold mb-space-sm">
+<span class="material-symbols-outlined">hub</span>
+            Coordinator (3 Tugas Pokok)
+          </div>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">arrow_forward</span>
+<span>Menyusun jadwal kegiatan, agenda rutin, dan latihan tim.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">arrow_forward</span>
+<span>Mengontrol arus pertukaran informasi antar anggota.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">arrow_forward</span>
+<span>Memastikan kesiapan logistik dan administrasi kegiatan.</span>
+</li>
+</ul>
+</div>
+<!-- Analyst -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs text-tertiary font-headline-sm text-body-lg font-bold mb-space-sm">
+<span class="material-symbols-outlined">query_stats</span>
+            Analyst (3 Tugas Pokok)
+          </div>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5">arrow_forward</span>
+<span>Menghimpun dan mengolah data intelijen serta tren situasi.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5">arrow_forward</span>
+<span>Memberikan rekomendasi taktis berbasis analisis data akurat.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5">arrow_forward</span>
+<span>Menyusun laporan berkala dinamika pelaksanaan tugas.</span>
+</li>
+</ul>
+</div>
+<!-- Specialist -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs text-secondary-fixed-dim font-headline-sm text-body-lg font-bold mb-space-sm">
+<span class="material-symbols-outlined">memory</span>
+            Specialist (3 Tugas Pokok)
+          </div>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed-dim mt-0.5">arrow_forward</span>
+<span>Menyediakan solusi teknis dan arsitektur pendukung.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed-dim mt-0.5">arrow_forward</span>
+<span>Membimbing anggota dalam penguasaan peranti dan modul teknis.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed-dim mt-0.5">arrow_forward</span>
+<span>Memelihara kehandalan sistem dan kesiapan sarana kerja.</span>
+</li>
+</ul>
+</div>
+<!-- Operations & Media -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-body-md font-bold mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+              Operations (3 Tugas)
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+              Mengeksekusi agenda operasional, memantau kendala di lapangan, serta menjamin target timeline tercapai disiplin.
+            </p>
+<div class="flex items-center gap-space-xs text-tertiary-fixed-dim font-headline-sm text-body-md font-bold mb-space-xs pt-space-xs">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+              Media &amp; Creative (3 Tugas)
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Merancang identitas visual kelompok, mengelola arsip dokumentasi resmi, serta mengemas materi publikasi eksekutif.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: KODE ETIK PERSONEL (HONOR CODE DECALOGUE) -->
+<section class="w-full px-margin py-space-xl bg-surface-container-lowest/80">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="text-center max-w-3xl mx-auto">
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim tracking-widest uppercase">Decalogue of Honor</span>
+<h2 class="font-headline-lg text-headline-lg text-tertiary-fixed mt-1">10 Nilai Kehormatan Kode Etik</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Prinsip dasar tanpa tawar-menawar yang diikatkan pada dada setiap personel SINDIKAT - 2.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- 1 to 5 -->
+<div class="space-y-space-sm">
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary-fixed-dim">01</span>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-on-surface">Menjaga Nama Baik</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Menjaga martabat, reputasi, dan kehormatan SINDIKAT - 2 dalam setiap tindakan dinas maupun kehidupan bermasyarakat.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary-fixed-dim">02</span>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-on-surface">Menghormati Seluruh Anggota</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Saling menghargai hak, martabat, dan pandangan setiap rekan tanpa memandang latar belakang asal satuan.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary-fixed-dim">03</span>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-on-surface">Komunikasi Terbuka &amp; Sehat</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Membangun dialog yang jujur, konstruktif, transparan, serta menghindari provokasi yang memecah kesatuan.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary-fixed-dim">04</span>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-on-surface">Tanggung Jawab Penuh</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Melaksanakan tugas dan mandat yang diembankan dengan dedikasi paripurna sampai tuntas.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary-fixed-dim">05</span>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-on-surface">Menjaga Rahasia Informasi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Melindungi dan menjaga data internal, dokumen taktis, serta kerahasiaan strategi kelompok dari kebocoran luar.</p>
+</div>
+</div>
+</div>
+<!-- 6 to 10 -->
+<div class="space-y-space-sm">
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary-fixed-dim">06</span>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-on-surface">Tidak Menyalahgunakan Wewenang</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tidak memakai posisi, gelar, atribut, atau aset kelompok untuk kepentingan ego pribadi yang merugikan.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary-fixed-dim">07</span>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-on-surface">Integritas &amp; Kejujuran Mutlak</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mengedepankan kebenaran objektif dalam penyampaian laporan, informasi lapangan, dan pengambilan keputusan.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary-fixed-dim">08</span>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-on-surface">Utamakan Kepentingan Bersama</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mendahulukan stabilitas, kekompakan, dan keberhasilan divisi di atas ambisi personal.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary-fixed-dim">09</span>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-on-surface">Menghargai Keberagaman Gagasan</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Memandang setiap perbedaan sudut pandang sebagai aset pengayaan ide dan kekuatan strategi bersama.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary-fixed-dim">10</span>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-on-surface">Profesionalitas Berorientasi Solusi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mengedepankan ketenangan, pendekatan solutif, serta pemikiran rasional ketika mengatasi setiap rintangan penugasan.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: SISTEM KOMUNIKASI MILITER/TAKTIK -->
+<section class="w-full px-margin py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="text-center max-w-2xl mx-auto">
+<span class="font-label-badge text-label-badge text-primary-container tracking-widest uppercase">Protokol Transmisi</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Sistem Komunikasi Taktis</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Alur komando terstandarisasi untuk kecepatan respons dan akurasi informasi.</p>
+</div>
+<!-- Pipeline Diagram Visual -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md relative">
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col items-center text-center relative group">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-space-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">hearing</span>
+</div>
+<div class="font-label-badge text-label-badge text-primary-container uppercase tracking-wider mb-1">PROTOKOL 01</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">CLEAR</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Penyampaian informasi ringkas, gamblang, dan bebas dari ambiguitas penafsiran.
+          </p>
+</div>
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col items-center text-center relative group">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-secondary mb-space-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">speed</span>
+</div>
+<div class="font-label-badge text-label-badge text-secondary uppercase tracking-wider mb-1">PROTOKOL 02</div>
+<h3 class="font-headline-sm text-headline-sm text-secondary font-bold">FAST</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Transmisi tepat waktu, penanganan instan, dan responsif terhadap perkembangan medan.
+          </p>
+</div>
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col items-center text-center relative group">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-tertiary-fixed-dim mb-space-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">enhanced_encryption</span>
+</div>
+<div class="font-label-badge text-label-badge text-tertiary-fixed uppercase tracking-wider mb-1">PROTOKOL 03</div>
+<h3 class="font-headline-sm text-headline-sm text-tertiary-fixed font-bold">SECURE</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Saluran terenkripsi, disiplin perlindungan kerahasiaan materi data, dan proteksi kanal.
+          </p>
+</div>
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col items-center text-center relative group">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-on-primary-fixed-variant mb-space-md group-hover:scale-110 transition-transform bg-primary-container">
+<span class="material-symbols-outlined text-[32px]">gavel</span>
+</div>
+<div class="font-label-badge text-label-badge text-primary-fixed uppercase tracking-wider mb-1">PROTOKOL 04</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">RESPONSIBLE</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Setiap data dan komando dapat dipertanggungjawabkan secara sah kepada rantai pimpinan.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: 5 PILAR PROGRAM KERJA (A s/d E) -->
+<section class="w-full px-margin py-space-xl bg-surface-container-lowest/60">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim tracking-widest uppercase">Agenda Aksi Nyata</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">5 Pilar Program Kerja</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Rencana aksi terpadu penguatan kapasitas, kohesi, dan pencapaian prestasi.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- A. DEVELOPMENT -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-2 py-1 bg-surface-container-high text-primary-container font-label-badge text-label-badge uppercase rounded">Pilar A</span>
+<span class="material-symbols-outlined text-primary-container">school</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">DEVELOPMENT</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Fokus pada peningkatan kapabilitas kognitif dan teknis personel.</p>
+<div class="mt-space-md space-y-space-xs text-body-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Pelatihan Terjadwal &amp; Intensif
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Sharing Knowledge Rutin Lintas Matra
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Workshop Praktikum Lapangan
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Pengembangan Skill Khusus Taktis
+              </div>
+</div>
+</div>
+</div>
+<!-- B. TEAM BUILDING -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-2 py-1 bg-surface-container-high text-tertiary-fixed-dim font-label-badge text-label-badge uppercase rounded">Pilar B</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim">groups_3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-tertiary-fixed font-bold">TEAM BUILDING</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Memelihara kerukunan, rasa senasib sepenanggungan, dan keselarasan cara tindak.</p>
+<div class="mt-space-md space-y-space-xs text-body-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+                Diskusi Kelompok Reflektif
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+                Simulasi Kasus Koordinasi Lapangan
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+                Evaluasi Berkala Suasana Tim
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+                Kegiatan Kebersamaan &amp; Guyub
+              </div>
+</div>
+</div>
+</div>
+<!-- C. PROJECT -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-2 py-1 bg-surface-container-high text-secondary font-label-badge text-label-badge uppercase rounded">Pilar C</span>
+<span class="material-symbols-outlined text-secondary">rocket_launch</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-secondary font-bold">PROJECT</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Mengejawantahkan teori ke dalam portofolio produk nyata dan solusi aplikatif.</p>
+<div class="mt-space-md space-y-space-xs text-body-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Proyek Sinergi Kelompok
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Riset Data Strategis &amp; Dinamika Siber
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Pengembangan Teknologi Tepat Guna
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Karya Kreatif Media &amp; Literasi
+              </div>
+</div>
+</div>
+</div>
+<!-- D. COMPETITION -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-2 py-1 bg-surface-container-high text-tertiary font-label-badge text-label-badge uppercase rounded">Pilar D</span>
+<span class="material-symbols-outlined text-tertiary">emoji_events</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-tertiary font-bold">COMPETITION</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Menguji mental tanding, kecepatan solusi, dan mengukir reputasi prestasi.</p>
+<div class="mt-space-md space-y-space-xs text-body-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Kompetisi Internal Asah Keterampilan
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Partisipasi Event Kompetisi Eksternal
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Tantangan Berkala (Skill Challenges)
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Achievement Recognition Program
+              </div>
+</div>
+</div>
+</div>
+<!-- E. DOCUMENTATION -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between md:col-span-2 lg:col-span-2">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-2 py-1 bg-surface-container-high text-primary-container font-label-badge text-label-badge uppercase rounded">Pilar E</span>
+<span class="material-symbols-outlined text-primary-container">folder_shared</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">DOCUMENTATION</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Pengarsipan tertib sebagai memori kolektif dan pembuktian kinerja berstandar militer.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm mt-space-md text-body-sm">
+<div class="flex items-center gap-space-xs text-on-surface bg-surface-container-high p-space-xs rounded">
+<span class="material-symbols-outlined text-primary-container text-[18px]">inventory_2</span>
+                Arsip Terstruktur Kegiatan Resmi
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface bg-surface-container-high p-space-xs rounded">
+<span class="material-symbols-outlined text-primary-container text-[18px]">description</span>
+                Penyusunan Laporan Berkala Komando
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface bg-surface-container-high p-space-xs rounded">
+<span class="material-symbols-outlined text-primary-container text-[18px]">movie</span>
+                Dokumentasi Visual &amp; Grafis
+              </div>
+<div class="flex items-center gap-space-xs text-on-surface bg-surface-container-high p-space-xs rounded">
+<span class="material-symbols-outlined text-primary-container text-[18px]">auto_stories</span>
+                Portfolio &amp; Buku Putih Sejarah Skuadron
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 9: IDENTITAS VISUAL & FILOSOFI MASKOT TARSIUS -->
+<section class="w-full px-margin py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="mb-space-sm">
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim tracking-widest uppercase">Simbolisme Lambang</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Filosofi Maskot Tarsius &amp; Identitas Visual</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Penjelasan mendalam makna lambang tarsius yang lincah, waspada, dan berkarakter kuat.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Emblem Visual Showcase -->
+<div class="lg:col-span-5 bg-surface-container p-space-xl rounded-xl shadow-xl flex flex-col items-center text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none"></div>
+<img alt="Filosofi Maskot Tarsius SINDIKAT-2" class="w-56 h-56 object-contain rounded-xl p-2 bg-surface-container-lowest/80 shadow-2xl mb-space-md" src="https://lh3.googleusercontent.com/aida/AEtjO1VLJmrbYXb4bkKnUMx-V2PmCcEnDT-U4LQz6E9HfWVUyIP1zNUeOEusLEcQYj8Vi2gPPzErQsvJDjD_TpIcLuoiV-LtSaIu-ZMotJ9tRHt8sQIYqGRcWGtfQLhfulxK_90qjJkvU3dzPcdkNS7jCUuO8vGgU68k13E6IQxEdNw6_dG7SF1XXV3j5niHV4jxIamCp8uC3nB9J1riT4DHA6VVNB6wtL0zjPznsrqtfirV0tI2ZNxW9WBHxilk"/>
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-wider">TARSIUS GUARDIAN</span>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase tracking-widest mt-1">THE SENTINEL OF SINDIKAT - 2</span>
+<!-- Palette Swatches -->
+<div class="w-full mt-space-lg pt-space-md border-t border-outline-variant/30 flex justify-center gap-space-sm">
+<div class="flex flex-col items-center">
+<span class="w-7 h-7 rounded-full bg-surface-container-lowest shadow-sm"></span>
+<span class="font-label-badge text-[9px] text-outline mt-1">Obsidian</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-7 h-7 rounded-full bg-surface-container shadow-sm"></span>
+<span class="font-label-badge text-[9px] text-outline mt-1">Navy Blue</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-7 h-7 rounded-full bg-tertiary-fixed-dim shadow-sm"></span>
+<span class="font-label-badge text-[9px] text-outline mt-1">Gold</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-7 h-7 rounded-full bg-primary-container shadow-sm"></span>
+<span class="font-label-badge text-[9px] text-outline mt-1">Cyber Teal</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-7 h-7 rounded-full bg-on-background shadow-sm"></span>
+<span class="font-label-badge text-[9px] text-outline mt-1">Pristine</span>
+</div>
+</div>
+</div>
+<!-- Philosophy Cards Breakdown -->
+<div class="lg:col-span-7 space-y-space-sm">
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="p-space-sm rounded-lg bg-primary-container/10 text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">visibility</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-primary">Mata Besar &amp; Tajam</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Melambangkan kewaspadaan tingkat tinggi, daya pengamatan jernih tanpa bias, serta kemampuan analisis tajam dalam melihat detail terkecil yang luput dari pandangan umum.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="p-space-sm rounded-lg bg-secondary/10 text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">bolt</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-secondary">Gerakan Lincah &amp; Cepat</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Merefleksikan respon kilat terhadap ancaman atau perubahan situasi dinamis, kemampuan bermanuver taktis, serta kesiapsiagaan operasional tanpa penundaan.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="p-space-sm rounded-lg bg-tertiary-container/10 text-tertiary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[24px]">dark_mode</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-tertiary-fixed">Nokturnal (Hewan Malam)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kemampuan unggul untuk beroperasi dan beradaptasi dalam medan paling sulit sekalipun, senyap bergerak saat pihak lain terlelap, dan tuntas mengeksekusi misi dalam keheningan.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container-high text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-on-surface">Ukuran Kecil namun Efektif</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bukan tentang besarnya kuantitas massa melainkan presisi, efisiensi tinggi, keuletan tak terpatahkan, serta fleksibilitas gerak di berbagai celah penugasan.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container-high text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[24px]">fingerprint</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-lg font-bold text-on-surface">Keunikan Endemik</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Menandakan identitas autentik yang khas, langka, terhormat, dan tidak mudah diduplikasi oleh kelompok penugasan lainnya.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 10: MOTTO & DEKLARASI RESMI SINDIKAT - 2 -->
+<section class="w-full px-margin py-space-xl bg-surface-container-lowest" id="deklarasi">
+<div class="max-w-5xl mx-auto flex flex-col items-center text-center gap-space-lg">
+<div>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim tracking-widest uppercase">Kredo Kehormatan</span>
+<h2 class="font-headline-lg text-headline-lg text-tertiary mt-1">Motto &amp; Piagam Deklarasi Resmi</h2>
+</div>
+<!-- Main Motto Banner -->
+<div class="w-full bg-gradient-to-b from-surface-container-high to-surface-container p-space-lg rounded-xl shadow-xl">
+<div class="font-label-badge text-label-badge text-primary-container tracking-widest uppercase mb-2">MOTTO UTAMA KELOMPOK</div>
+<div class="font-headline-lg text-headline-lg md:text-[44px] text-tertiary font-bold tracking-wide">
+          "SILENT IN MOVE, SOLID IN PURPOSE"
+        </div>
+<div class="flex flex-wrap items-center justify-center gap-space-md mt-space-md text-body-sm text-on-surface-variant">
+<span class="px-space-md py-space-xs rounded-full bg-surface-container-lowest font-medium text-secondary">
+            • One Team. One Mission. One Identity
+          </span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container-lowest font-medium text-primary-container">
+            • Solid in Unity, Sharp in Action
+          </span>
+</div>
+</div>
+<!-- Sumpah Deklarasi Card -->
+<div class="w-full bg-surface-container rounded-xl p-space-xl text-left shadow-2xl relative">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-[32px]">military_tech</span>
+<div>
+<div class="font-headline-sm text-headline-sm text-tertiary font-bold">PIAGAM DEKLARASI SUMPAH</div>
+<div class="font-label-badge text-label-badge text-outline">KODIFIKASI SUMPAH SETIA ANGGOTA</div>
+</div>
+</div>
+<span class="px-space-sm py-1 bg-surface-container-highest text-primary font-label-code text-body-sm rounded">AUTENTIK-2025</span>
+</div>
+<div class="font-body-lg text-body-lg text-on-surface leading-loose space-y-space-md">
+<p class="font-semibold text-primary">
+            "Kami adalah SINDIKAT - 2."
+          </p>
+<p>
+            Kami berdiri bukan hanya sebagai sekumpulan individu, tetapi sebagai sebuah kesatuan yang dibangun atas dasar <span class="text-tertiary-fixed font-semibold">solidaritas, integritas, disiplin,</span> dan <span class="text-tertiary-fixed font-semibold">tanggung jawab</span>.
+          </p>
+<p>
+            Kami belajar bersama. Kami berkembang bersama. Kami menghadapi tantangan bersama. Setiap personel memiliki kemampuan, setiap kemampuan memiliki peran, dan setiap peran memiliki tujuan.
+          </p>
+<p class="text-center font-headline-sm text-headline-sm text-tertiary-fixed font-bold py-space-sm">
+            Satu tim. Satu identitas. Satu tujuan.<br/>
+            SINDIKAT - 2 — Solid in Unity, Sharp in Action.
+          </p>
+</div>
+<!-- Seal & Signature representation -->
+<div class="mt-space-lg pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<img alt="Cap Emblem SINDIKAT-2" class="w-14 h-14 rounded-full object-contain p-1 bg-surface-container-lowest" src="https://lh3.googleusercontent.com/aida/AEtjO1VLJmrbYXb4bkKnUMx-V2PmCcEnDT-U4LQz6E9HfWVUyIP1zNUeOEusLEcQYj8Vi2gPPzErQsvJDjD_TpIcLuoiV-LtSaIu-ZMotJ9tRHt8sQIYqGRcWGtfQLhfulxK_90qjJkvU3dzPcdkNS7jCUuO8vGgU68k13E6IQxEdNw6_dG7SF1XXV3j5niHV4jxIamCp8uC3nB9J1riT4DHA6VVNB6wtL0zjPznsrqtfirV0tI2ZNxW9WBHxilk"/>
+<div class="text-left">
+<div class="font-headline-sm text-body-md text-primary font-bold">DEWAN KOMANDO SINDIKAT - 2</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Ditetapkan &amp; Diikrarkan Bersama Seluruh Personel</div>
+</div>
+</div>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-bright transition-colors font-headline-sm text-body-sm flex items-center gap-space-xs" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+            Cetak Salinan Piagam
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 11: PENUTUP & CALL TO ACTION -->
+<section class="w-full px-margin py-space-xl">
+<div class="max-w-4xl mx-auto text-center flex flex-col items-center gap-space-md">
+<div class="w-16 h-1 bg-gradient-to-r from-transparent via-tertiary-fixed-dim to-transparent mb-space-xs"></div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">
+        "Keberhasilan sebuah misi tidak ditentukan oleh kehebatan perorangan, melainkan oleh kekompakan dan kekuatan seluruh personel sebagai satu kesatuan utuh."
+      </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+        SINDIKAT - 2 terus melangkah maju dengan kesiapan tempur nalar, integritas tak tergoyahkan, dan loyalitas tanpa batas.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-space-md mt-space-md">
+<a class="px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-md font-semibold hover:bg-primary-fixed-dim transition-all shadow-md" href="#personel">
+          Tinjau Kembali Personel
+        </a>
+<a class="px-space-lg py-space-sm rounded-lg bg-surface-container text-tertiary-fixed font-headline-sm text-body-md font-semibold hover:bg-surface-container-high transition-all" href="#">
+          Kembali ke Puncak Portal
+        </a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple smooth scroll micro-behavior
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId !== '#') {
+        e.preventDefault();
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest py-space-xl text-on-surface-variant"><div class="w-full px-margin flex flex-col items-center justify-center gap-space-md text-center"><div class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span><span class="font-label-badge text-label-badge text-tertiary-fixed-dim tracking-widest uppercase">SILENT IN MOVE, SOLID IN PURPOSE</span><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span></div><p class="font-body-sm text-body-sm text-outline max-w-xl">Portal Komando dan Intelijen Resmi Divisi SINDIKAT - 2. Berintegritas, Terenkripsi, dan Siap Siaga Mengawal Kedaulatan Informasi.</p><div class="font-body-sm text-body-sm text-on-surface-variant/70">© 2025 SINDIKAT - 2 (Syndicate-2). Seluruh Hak Cipta Dilindungi Undang-Undang.</div></div></footer></body></html>
