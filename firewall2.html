@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'surface-variant': '#2c344d', 'primary-fixed': '#26fedc', 'secondary-fixed': '#b3ebff', 'error-container': '#93000a', 'primary': '#d7fff3', 'on-secondary': '#003642', 'surface-bright': '#313852', 'inverse-primary': '#006b5b', 'tertiary': '#fff5ee', 'on-secondary-container': '#003f4e', 'on-tertiary-fixed-variant': '#683d00', 'tertiary-container': '#ffd2a6', 'on-primary': '#00382f', 'surface-container-low': '#131a33', 'tertiary-fixed': '#ffdcbc', 'tertiary-fixed-dim': '#ffb86b', 'error': '#ffb4ab', 'surface-tint': '#00dfc1', 'primary-fixed-dim': '#00dfc1', 'surface-container-highest': '#2c344d', 'on-primary-fixed-variant': '#005144', 'surface-container-lowest': '#050d25', 'surface': '#0a122a', 'on-secondary-fixed': '#001f27', 'on-tertiary-fixed': '#2c1700', 'secondary-fixed-dim': '#4cd6fb', 'on-tertiary': '#492900', 'background': '#0a122a', 'on-secondary-fixed-variant': '#004e5f', 'primary-container': '#00f5d4', 'outline-variant': '#3a4a46', 'on-background': '#dbe1ff', 'on-tertiary-container': '#8a5200', 'on-primary-container': '#006c5c', 'inverse-on-surface': '#282f49', 'secondary-container': '#00b2d6', 'on-surface': '#dbe1ff', 'on-primary-fixed': '#00201a', 'surface-dim': '#0a122a', 'outline': '#83948f', 'surface-container': '#171e37', 'inverse-surface': '#dbe1ff', 'on-error': '#690005', 'on-error-container': '#ffdad6', 'on-surface-variant': '#b9cac4', 'secondary': '#4cd6fb', 'surface-container-high': '#212942' }, borderRadius: { DEFAULT: '0.125rem', lg: '0.25rem', xl: '0.5rem', full: '0.75rem' }, spacing: { 'space-xl': '2.5rem', 'margin': '2rem', 'gutter-mobile': '1rem', 'gutter': '1.5rem', 'space-sm': '0.5rem', 'space-lg': '1.5rem', 'margin-mobile': '1rem', 'space-md': '1rem', 'space-xs': '0.25rem' }, fontFamily: { 'body-md': ['Inter'], 'headline-md': ['Plus Jakarta Sans'], 'body-sm': ['Inter'], 'headline-lg-mobile': ['Plus Jakarta Sans'], 'label-badge': ['JetBrains Mono'], 'headline-sm': ['Plus Jakarta Sans'], 'headline-lg': ['Plus Jakarta Sans'], 'label-code': ['JetBrains Mono'], 'body-lg': ['Inter'] }, fontSize: { 'body-md': ['15px', { lineHeight: '24px', fontWeight: '400' }], 'headline-md': ['28px', { lineHeight: '36px', letterSpacing: '-0.01em', fontWeight: '600' }], 'body-sm': ['13px', { lineHeight: '20px', fontWeight: '400' }], 'headline-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '-0.01em', fontWeight: '700' }], 'label-badge': ['11px', { lineHeight: '14px', letterSpacing: '0.08em', fontWeight: '600' }], 'headline-sm': ['20px', { lineHeight: '28px', fontWeight: '600' }], 'headline-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.02em', fontWeight: '700' }], 'label-code': ['13px', { lineHeight: '18px', letterSpacing: '0.02em', fontWeight: '500' }], 'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-background selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container"><span class="material-symbols-outlined">shield_lock</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">CyberSec Hub</span><span class="font-label-badge text-label-badge text-primary-container uppercase tracking-widest">FW &amp; NET OPS</span></div></div><div class="px-gutter py-space-md bg-surface-container-low"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-badge text-label-badge uppercase text-on-surface-variant">Silabus Kursus</span><span class="font-label-code text-label-code text-primary-container">6 / 17 Bab</span></div><div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden"><div class="bg-primary-container h-full rounded-full w-[35%]"></div></div><div class="flex items-center justify-between mt-space-xs"><span class="font-body-sm text-body-sm text-on-surface-variant">35% Selesai</span><span class="font-body-sm text-body-sm text-secondary-fixed-dim">Modul 2 Aktif</span></div></div><div class="px-gutter py-space-sm"><div class="font-label-badge text-label-badge text-outline uppercase tracking-wider px-space-xs mb-space-xs">Navigasi Pembelajaran</div></div><nav class="flex-1 px-gutter overflow-y-auto space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_16px_rgba(0,245,212,0.25)]"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_16px_rgba(0,245,212,0.25)]" data-path="modul-overview" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-body-sm text-body-sm font-medium">Overview &amp; 17 Bab</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="konsep-dasar-firewall" href="#"><span class="material-symbols-outlined text-[20px]">schema</span><span class="font-body-sm text-body-sm font-medium">Konsep Dasar</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="arsitektur-jaringan" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-body-sm text-body-sm font-medium">Arsitektur Jaringan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="praktik-lab-linux" href="#"><span class="material-symbols-outlined text-[20px]">terminal</span><span class="font-body-sm text-body-sm font-medium">Praktik Lab Linux</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="best-practices-hardening" href="#"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-body-sm text-body-sm font-medium">Best Practices</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="glosarium-protokol" href="#"><span class="material-symbols-outlined text-[20px]">spellcheck</span><span class="font-body-sm text-body-sm font-medium">Glosarium Protokol</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="asesmen-ujian-lab" href="#"><span class="material-symbols-outlined text-[20px]">task_alt</span><span class="font-body-sm text-body-sm font-medium">Ujian &amp; Asesmen</span></a></nav><div class="p-gutter bg-surface-container-lowest"><div class="p-space-md bg-surface-container-low rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary">dns</span><div><div class="font-label-badge text-label-badge text-on-surface">SANDBOX STATUS</div><div class="font-label-code text-label-code text-primary-container">SSH: ACTIVE // 443</div></div></div><span class="h-2 w-2 rounded-full bg-primary-container animate-pulse"></span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin"><div class="flex items-center gap-gutter"><div class="relative flex items-center w-80 max-w-md"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-space-md py-space-xs bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Cari Bab, iptables, DMZ, paket log..." type="text"/></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-semibold"><a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="konsep-dasar-firewall" href="#">Konsep</a><a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="arsitektur-jaringan" href="#">Arsitektur</a><a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="praktik-lab-linux" href="#">Praktik Lab</a><a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="best-practices-hardening" href="#">Best Practices</a><a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="glosarium-protokol" href="#">Glosarium</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-full text-label-badge font-label-badge text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary-container"></span><span class="text-on-surface">ONLINE</span></div><button class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" title="Ganti Tema" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><button class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors relative" title="Notifikasi Keamanan" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 px-margin bg-background min-h-screen"><div class="flex flex-col w-full space-y-space-xl pb-space-xl">
+<!-- Top Telemetry & Banner Meta -->
+<section class="relative w-full rounded-2xl bg-surface-container-low p-space-lg md:p-space-xl overflow-hidden shadow-2xl">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary-container/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/5 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col space-y-space-md">
+<!-- Telemetry Status Pills -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container text-label-badge font-label-badge text-primary uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+          RouterOS v7.14+ Production
+        </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container text-label-badge font-label-badge text-secondary uppercase">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+          FastPath &amp; L3HW Offload
+        </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container text-label-badge font-label-badge text-primary-fixed uppercase">
+<span class="material-symbols-outlined text-[14px]">security</span>
+          Stateful Packet Inspection (SPI)
+        </span>
+<span class="ml-auto text-label-code font-label-code text-on-surface-variant text-body-sm">
+          SYS_UPTIME: 142D 18:42:01 // KERNEL: LINUX 5.6.3
+        </span>
+</div>
+<!-- Main Headline Block -->
+<div class="space-y-space-xs max-w-4xl">
+<p class="font-label-badge text-label-badge uppercase tracking-widest text-primary-container">
+          Modul Arsitektur &amp; Keamanan Jaringan // Bab 04
+        </p>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-tight">
+          ARSITEKTUR &amp; CARA KERJA FIREWALL MIKROTIK (ROUTEROS)
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant pt-space-xs">
+          Dekomposisi mendalam alur pemrosesan paket (Packet Flow), 3 Filter Chains utama (Input, Forward, Output), mekanisme NAT, Mangle, Connection Tracking (conntrack), hingga implementasi FastTrack untuk throughput multi-gigabit.
+        </p>
+</div>
+<!-- Quick Metrics Counter Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md pt-space-md">
+<div class="bg-surface-container p-space-md rounded-xl">
+<div class="font-label-badge text-label-badge text-on-surface-variant uppercase">Default Chains</div>
+<div class="font-headline-md text-headline-md text-primary-container">3 Main</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Input, Forward, Output</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl">
+<div class="font-label-badge text-label-badge text-on-surface-variant uppercase">Conntrack States</div>
+<div class="font-headline-md text-headline-md text-secondary">5 States</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">New, Est, Rel, Inv, Untracked</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl">
+<div class="font-label-badge text-label-badge text-on-surface-variant uppercase">Processing Engine</div>
+<div class="font-headline-md text-headline-md text-primary">FastTrack</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Hingga 5x CPU Reduction</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl">
+<div class="font-label-badge text-label-badge text-on-surface-variant uppercase">Core Filter Table</div>
+<div class="font-headline-md text-headline-md text-tertiary-fixed-dim">Netfilter</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Linux Kernel Subsystem</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Packet Flow Visualizer Section -->
+<section class="w-full flex flex-col space-y-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<div class="font-label-badge text-label-badge uppercase text-primary-container tracking-wider">Visualisasi Topologi Alur</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">MikroTik Packet Flow Architecture</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Pilih simpul alur pemrosesan paket di bawah untuk menginspeksi tabel operasi, register conntrack, dan perilaku kernel.</p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-lg">
+<button class="px-space-sm py-1 rounded bg-primary-container text-on-primary font-label-badge text-label-badge uppercase font-semibold transition-all" id="btn-flow-all">All Paths</button>
+<button class="px-space-sm py-1 rounded hover:bg-surface-container text-on-surface-variant font-label-badge text-label-badge uppercase transition-all" id="btn-flow-input">Input Only</button>
+<button class="px-space-sm py-1 rounded hover:bg-surface-container text-on-surface-variant font-label-badge text-label-badge uppercase transition-all" id="btn-flow-fwd">Forward Only</button>
+</div>
+</div>
+<!-- Packet Flow Diagram Map -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-xl relative overflow-hidden">
+<!-- Background Grid Graphic -->
+<div class="absolute inset-0 bg-[radial-gradient(#171e37_1px,transparent_1px)] [background-size:16px_16px] opacity-40 pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<!-- Ingress Stage -->
+<div class="lg:col-span-2 flex flex-col gap-space-sm">
+<div class="text-center font-label-badge text-label-badge text-outline uppercase tracking-wider">Ingress Stage</div>
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all cursor-pointer shadow-md group" id="node-ingress">
+<div class="flex items-center justify-between mb-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">input</span>
+<span class="font-label-code text-label-code text-primary-container">NIC</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Physical / SFP</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Interface Rx, VLAN strip, Bridge filtering</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all cursor-pointer shadow-md group" id="node-prerouting">
+<div class="flex items-center justify-between mb-1">
+<span class="material-symbols-outlined text-primary-container text-[20px]">alt_route</span>
+<span class="font-label-badge text-label-badge text-secondary font-semibold">STAGE 1</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Prerouting</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Conntrack -&gt; Mangle -&gt; D-NAT (Port Forward)</div>
+</div>
+</div>
+<!-- Flow Line 1 -->
+<div class="lg:col-span-1 hidden lg:flex justify-center items-center">
+<div class="w-full h-0.5 bg-gradient-to-r from-primary-container to-secondary relative">
+<span class="absolute -top-1.5 right-0 w-3 h-3 rotate-45 border-t-2 border-r-2 border-secondary"></span>
+</div>
+</div>
+<!-- Decision Box -->
+<div class="lg:col-span-2 flex flex-col items-center">
+<div class="text-center font-label-badge text-label-badge text-outline uppercase tracking-wider mb-2">Kernel Logic</div>
+<div class="w-full p-space-md rounded-xl bg-surface-container-high text-center shadow-lg cursor-pointer hover:shadow-primary-container/20 transition-all" id="node-decision">
+<div class="w-10 h-10 mx-auto rounded-full bg-surface-variant flex items-center justify-center text-primary-container mb-2">
+<span class="material-symbols-outlined text-[24px]">call_split</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Routing Decision</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-center">Destination: Router OS IP vs Remote IP?</div>
+</div>
+</div>
+<!-- Flow Line 2 (Split) -->
+<div class="lg:col-span-1 hidden lg:flex justify-center items-center">
+<div class="w-full h-0.5 bg-gradient-to-r from-secondary to-primary relative">
+<span class="absolute -top-1.5 right-0 w-3 h-3 rotate-45 border-t-2 border-r-2 border-primary"></span>
+</div>
+</div>
+<!-- 3 Chains Central Fork -->
+<div class="lg:col-span-4 flex flex-col gap-space-sm">
+<div class="text-center font-label-badge text-label-badge text-outline uppercase tracking-wider">Firewall Filter Core</div>
+<!-- Chain Input -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high cursor-pointer transition-all shadow-md" id="card-chain-input">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 font-label-badge text-label-badge text-secondary uppercase">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Chain: INPUT
+              </span>
+<span class="font-label-code text-label-code text-on-surface-variant">Local Target</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-1">Router Itself</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">WinBox (8291), SSH (22), WebFig (80/443), DNS Cache (53)</div>
+</div>
+<!-- Chain Forward -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high cursor-pointer transition-all shadow-md" id="card-chain-forward">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 font-label-badge text-label-badge text-primary-container uppercase">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span> Chain: FORWARD
+              </span>
+<span class="font-label-code text-label-code text-on-surface-variant">Transit Traffic</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-1">Pass Through Router</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">LAN &lt;=&gt; WAN, VLAN Trunking, Inter-subnet Routing</div>
+</div>
+<!-- Chain Output -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high cursor-pointer transition-all shadow-md" id="card-chain-output">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 font-label-badge text-label-badge text-tertiary-fixed-dim uppercase">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span> Chain: OUTPUT
+              </span>
+<span class="font-label-code text-label-code text-on-surface-variant">Self Generated</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-1">Origin RouterOS</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">NTP sync, Cloud DDNS, Netwatch Ping, MikroTik Package Updates</div>
+</div>
+</div>
+<!-- Flow Line 3 -->
+<div class="lg:col-span-1 hidden lg:flex justify-center items-center">
+<div class="w-full h-0.5 bg-gradient-to-r from-primary to-primary-container relative">
+<span class="absolute -top-1.5 right-0 w-3 h-3 rotate-45 border-t-2 border-r-2 border-primary-container"></span>
+</div>
+</div>
+<!-- Egress & Postrouting Stage -->
+<div class="lg:col-span-1 flex flex-col gap-space-sm">
+<div class="text-center font-label-badge text-label-badge text-outline uppercase tracking-wider">Egress</div>
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all cursor-pointer shadow-md text-center" id="node-postrouting">
+<span class="material-symbols-outlined text-primary text-[20px] mb-1">upload</span>
+<div class="font-headline-sm text-headline-sm text-on-surface">Postrouting</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">S-NAT / Masquerade</div>
+</div>
+</div>
+</div>
+<!-- Dynamic Node Inspector Drawer -->
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-container flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md" id="flow-inspector-box">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">network_intel_node</span>
+</div>
+<div>
+<div class="font-label-badge text-label-badge text-primary-container uppercase">Selected Node Inspection</div>
+<div class="font-headline-sm text-headline-sm text-on-surface" id="inspector-title">Prerouting (Mangle &amp; DST-NAT)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant" id="inspector-desc">
+              Paket pertama kali diolah oleh modul Connection Tracking untuk verifikasi integritas checksum TCP/UDP. Di tahap ini, Destination NAT (D-NAT / Port Forwarding) diterapkan SEBELUM keputusan routing.
+            </div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-auto">
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-label-code font-label-code text-secondary text-body-sm">
+            Table: nat / mangle
+          </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-label-code font-label-code text-primary-container text-body-sm">
+            Action: dst-nat, mark-connection
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Deep Comparison: 3 Main Filter Chains -->
+<section class="w-full flex flex-col space-y-space-md">
+<div>
+<div class="font-label-badge text-label-badge uppercase text-primary-container tracking-wider">Arsitektur Netfilter MikroTik</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Perbandingan Komprehensif 3 Filter Chains</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Memahami dengan presisi batasan yuridis packet filtering untuk mencegah salah blokir atau eksploitasi remote access.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Chain 1: INPUT -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between shadow-lg relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">shield</span>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary text-label-badge font-label-badge uppercase font-bold">
+              CHAIN: INPUT
+            </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Melindungi Router Itself</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Menangani semua lalu lintas jaringan di mana alamat IP tujuan paket (<code class="font-label-code text-primary-container">dst-address</code>) adalah salah satu IP lokal yang terpasang pada Router MikroTik.
+            </p>
+</div>
+<!-- Scenario Vector -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl space-y-space-xs">
+<div class="font-label-badge text-label-badge uppercase text-outline">Target &amp; Layanan Rentan</div>
+<ul class="font-body-sm text-body-sm text-on-surface space-y-1">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-error">dangerous</span>
+                Brute Force SSH (port 22) &amp; WinBox (port 8291)
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-error">dangerous</span>
+                Open DNS Relay Abuse (UDP/TCP port 53 via WAN)
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-error">dangerous</span>
+                BGP / OSPF / SNMP flooding &amp; WebFig hijacking
+              </li>
+</ul>
+</div>
+<div class="space-y-1">
+<div class="font-label-badge text-label-badge uppercase text-primary-container">Golden Security Rule:</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Izinkan koneksi established/related, izinkan Winbox dari Subnet Manajemen terdaftar, lalu <span class="font-semibold text-error">Drop ALL interface WAN</span> di baris terbawah.
+            </p>
+</div>
+</div>
+<div class="mt-space-md pt-space-md bg-surface-container-highest/30 rounded-xl p-space-sm">
+<span class="font-label-code text-label-code text-secondary text-body-sm block truncate">
+            /ip firewall filter add chain=input in-interface-list=WAN action=drop
+          </span>
+</div>
+</div>
+<!-- Chain 2: FORWARD -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between shadow-lg relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[28px]">swap_horiz</span>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-primary-container/20 text-primary-container text-label-badge font-label-badge uppercase font-bold">
+              CHAIN: FORWARD
+            </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Transit Traffic &amp; Client</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Menangani semua lalu lintas yang HANYA menumpang lewat router. Paket masuk melalui satu interface dan segera keluar melalui interface yang berbeda tanpa ditampung CPU lokal.
+            </p>
+</div>
+<!-- Scenario Vector -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl space-y-space-xs">
+<div class="font-label-badge text-label-badge uppercase text-outline">Target &amp; Ancaman Klien</div>
+<ul class="font-body-sm text-body-sm text-on-surface space-y-1">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">warning</span>
+                Penyebaran ransomware antar-VLAN (SMB/RDP port scan)
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">warning</span>
+                Serangan botnet outbound DDoS dari perangkat IoT lokal
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">warning</span>
+                Inbound unsolicited packet floods dari public internet
+              </li>
+</ul>
+</div>
+<div class="space-y-1">
+<div class="font-label-badge text-label-badge uppercase text-primary-container">Golden Security Rule:</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Terapkan FastTrack untuk paket established, blokir paket status Invalid, isolasi segmen LAN Tamu (Guest) dari LAN Server, dan drop semua paket Ingress WAN tanpa status DST-NAT.
+            </p>
+</div>
+</div>
+<div class="mt-space-md pt-space-md bg-surface-container-highest/30 rounded-xl p-space-sm">
+<span class="font-label-code text-label-code text-primary-container text-body-sm block truncate">
+            /ip firewall filter add chain=forward connection-state=invalid action=drop
+          </span>
+</div>
+</div>
+<!-- Chain 3: OUTPUT -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between shadow-lg relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[28px]">outbox</span>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-tertiary-container/20 text-tertiary-fixed-dim text-label-badge font-label-badge uppercase font-bold">
+              CHAIN: OUTPUT
+            </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Paket Origin RouterOS</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Menangani paket yang dikonstruksi secara mandiri oleh stack kernel RouterOS. Paket ini bermula dari proses internal router dan dikirim keluar menuju jaringan lokal maupun WAN.
+            </p>
+</div>
+<!-- Scenario Vector -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl space-y-space-xs">
+<div class="font-label-badge text-label-badge uppercase text-outline">Operasional &amp; Integritas</div>
+<ul class="font-body-sm text-body-sm text-on-surface space-y-1">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">verified</span>
+                Sinkronisasi waktu presisi (SNTP Client UDP 123)
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">verified</span>
+                Pemeriksaan update firmware RouterOS (HTTPS mikrotik.com)
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">verified</span>
+                DNS Lookup forwarding recursive &amp; Syslog telemetry
+              </li>
+</ul>
+</div>
+<div class="space-y-1">
+<div class="font-label-badge text-label-badge uppercase text-primary-container">Golden Security Rule:</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Secara default dibiarkan ACCEPT. Dapat difilter jika router berada pada enklaf ultra-ketat (misalnya mencegah exfiltration telemetry atau membatasi rute DNS upstream terotorisasi saja).
+            </p>
+</div>
+</div>
+<div class="mt-space-md pt-space-md bg-surface-container-highest/30 rounded-xl p-space-sm">
+<span class="font-label-code text-label-code text-tertiary-fixed-dim text-body-sm block truncate">
+            /ip firewall filter add chain=output action=accept
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- RouterOS CLI Defense Configuration Blueprint -->
+<section class="w-full flex flex-col space-y-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<div class="font-label-badge text-label-badge uppercase text-primary-container tracking-wider">Standar Industri Defconf Hardening</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">RouterOS Firewall Filter Implementation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Daftar aturan urutan atas (top-to-bottom) yang wajib diimplementasikan. MikroTik memproses aturan secara sekuensial; kecocokan pertama (first match) langsung dieksekusi.
+        </p>
+</div>
+<button class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-semibold hover:bg-primary-fixed transition-all shadow-md" id="copy-all-rules-btn">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+        Salin Script CLI Komplit
+      </button>
+</div>
+<!-- Rules Interactive Table Container -->
+<div class="w-full bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-label-badge font-label-badge text-on-surface-variant uppercase">
+<th class="py-space-md px-space-md">Order</th>
+<th class="py-space-md px-space-md">Chain</th>
+<th class="py-space-md px-space-md">Action</th>
+<th class="py-space-md px-space-md">Kondisi / Parameter Kunci</th>
+<th class="py-space-md px-space-md">Tujuan Fungsional</th>
+<th class="py-space-md px-space-md text-right">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-sm">
+<!-- Rule 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-label-code text-label-code text-primary-container font-bold">#01</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-secondary font-semibold">FORWARD</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-label-badge text-label-badge font-bold uppercase">FASTTRACK</span>
+</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-on-surface-variant">
+                connection-state=established,related
+              </td>
+<td class="py-space-md px-space-md text-on-surface">
+                Bypass CPU netfilter untuk paket terverifikasi aktif (Offload throughput).
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="rule-copy-btn p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary-container transition-colors" data-rule-index="1" title="Salin Sintaks CLI">
+<span class="material-symbols-outlined text-[18px]">file_copy</span>
+</button>
+</td>
+</tr>
+<!-- Rule 2 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container/30">
+<td class="py-space-md px-space-md font-label-code text-label-code text-primary-container font-bold">#02</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-primary font-semibold">INPUT, FORWARD</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary-container font-label-badge text-label-badge font-bold uppercase">ACCEPT</span>
+</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-on-surface-variant">
+                connection-state=established,related,untracked
+              </td>
+<td class="py-space-md px-space-md text-on-surface">
+                Izinkan seluruh paket balasan yang sah dari request internal sebelumnya.
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="rule-copy-btn p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary-container transition-colors" data-rule-index="2" title="Salin Sintaks CLI">
+<span class="material-symbols-outlined text-[18px]">file_copy</span>
+</button>
+</td>
+</tr>
+<!-- Rule 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-label-code text-label-code text-primary-container font-bold">#03</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-primary font-semibold">INPUT, FORWARD</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-error-container/30 text-error font-label-badge text-label-badge font-bold uppercase">DROP</span>
+</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-error">
+                connection-state=invalid
+              </td>
+<td class="py-space-md px-space-md text-on-surface">
+                Eliminasi paket anomali, corrupted flags, atau manipulasi session hijack.
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="rule-copy-btn p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary-container transition-colors" data-rule-index="3" title="Salin Sintaks CLI">
+<span class="material-symbols-outlined text-[18px]">file_copy</span>
+</button>
+</td>
+</tr>
+<!-- Rule 4 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container/30">
+<td class="py-space-md px-space-md font-label-code text-label-code text-primary-container font-bold">#04</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-secondary font-semibold">INPUT</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-label-badge text-label-badge font-bold uppercase">ACCEPT</span>
+</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-on-surface-variant">
+                protocol=icmp limit=5,10:packet
+              </td>
+<td class="py-space-md px-space-md text-on-surface">
+                Izinkan diagnostik ping ICMP dengan rate-limiting anti Ping-of-Death / DoS.
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="rule-copy-btn p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary-container transition-colors" data-rule-index="4" title="Salin Sintaks CLI">
+<span class="material-symbols-outlined text-[18px]">file_copy</span>
+</button>
+</td>
+</tr>
+<!-- Rule 5 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-label-code text-label-code text-primary-container font-bold">#05</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-secondary font-semibold">INPUT</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-error-container/30 text-error font-label-badge text-label-badge font-bold uppercase">DROP</span>
+</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-error">
+                in-interface-list=WAN protocol=udp port=53
+              </td>
+<td class="py-space-md px-space-md text-on-surface">
+                Cegah router menjadi pemantul Open DNS Resolver Amplification attack.
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="rule-copy-btn p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary-container transition-colors" data-rule-index="5" title="Salin Sintaks CLI">
+<span class="material-symbols-outlined text-[18px]">file_copy</span>
+</button>
+</td>
+</tr>
+<!-- Rule 6 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container/30">
+<td class="py-space-md px-space-md font-label-code text-label-code text-primary-container font-bold">#06</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-secondary font-semibold">INPUT</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-error-container/30 text-error font-label-badge text-label-badge font-bold uppercase">DROP</span>
+</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-error">
+                in-interface-list=WAN
+              </td>
+<td class="py-space-md px-space-md text-on-surface">
+                Tolak seluruh akses langsung dari WAN menuju RouterOS (Kunci pintu router).
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="rule-copy-btn p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary-container transition-colors" data-rule-index="6" title="Salin Sintaks CLI">
+<span class="material-symbols-outlined text-[18px]">file_copy</span>
+</button>
+</td>
+</tr>
+<!-- Rule 7 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-label-code text-label-code text-primary-container font-bold">#07</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-secondary font-semibold">FORWARD</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-error-container/30 text-error font-label-badge text-label-badge font-bold uppercase">DROP</span>
+</td>
+<td class="py-space-md px-space-md font-label-code text-label-code text-error">
+                connection-nat-state=!dstnat in-interface-list=WAN
+              </td>
+<td class="py-space-md px-space-md text-on-surface">
+                Blokir paket masuk WAN kecuali secara eksplisit di-port forward (Dst-NAT).
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="rule-copy-btn p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary-container transition-colors" data-rule-index="7" title="Salin Sintaks CLI">
+<span class="material-symbols-outlined text-[18px]">file_copy</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Real-time Terminal Snippet Box -->
+<div class="bg-surface-container p-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-label-code text-on-surface-variant ml-2">admin@MikroTik_EdgeCore &gt; /ip firewall export</span>
+</div>
+<span class="font-label-badge text-label-badge text-primary-container uppercase">Sintaks RouterOS v7</span>
+</div>
+<pre class="font-label-code text-label-code text-primary bg-surface-container-lowest p-space-md rounded-lg overflow-x-auto selection:bg-secondary selection:text-on-secondary"><code id="code-snippet-terminal">/ip firewall filter
+add chain=forward action=fasttrack-connection connection-state=established,related comment="defconf: fasttrack"
+add chain=forward action=accept connection-state=established,related,untracked comment="defconf: accept established,related,untracked"
+add chain=forward action=drop connection-state=invalid comment="defconf: drop invalid"
+add chain=input action=accept connection-state=established,related,untracked comment="defconf: accept established,related,untracked"
+add chain=input action=drop connection-state=invalid comment="defconf: drop invalid"
+add chain=input action=accept protocol=icmp limit=5,10:packet comment="defconf: accept ICMP rate limited"
+add chain=input action=drop in-interface-list=WAN protocol=udp dst-port=53 comment="drop open DNS recursion from WAN"
+add chain=input action=drop in-interface-list=WAN comment="defconf: drop all not coming from LAN"
+add chain=forward action=drop connection-state=new connection-nat-state=!dstnat in-interface-list=WAN comment="defconf: drop incoming from WAN not DST-NATed"</code></pre>
+</div>
+</div>
+</section>
+<!-- Deep Architecture: Conntrack, FastTrack & Dynamic Blacklisting -->
+<section class="w-full grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Module 1: Connection Tracking Table -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between shadow-lg">
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">account_tree</span>
+</div>
+<div>
+<div class="font-label-badge text-label-badge text-outline uppercase">State Machine</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Connection Tracking</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Conntrack adalah jantung stateful firewall MikroTik yang merekam setiap status sesi (flow) ke dalam RAM.
+        </p>
+<div class="space-y-space-xs font-label-code text-label-code text-body-sm">
+<div class="p-space-xs rounded bg-surface-container flex items-center justify-between">
+<span class="text-primary-container font-semibold">NEW</span>
+<span class="text-on-surface-variant">Paket inisiasi awal (SYN)</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container flex items-center justify-between">
+<span class="text-secondary font-semibold">ESTABLISHED</span>
+<span class="text-on-surface-variant">Koneksi telah direspons 2 arah</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container flex items-center justify-between">
+<span class="text-primary font-semibold">RELATED</span>
+<span class="text-on-surface-variant">Koneksi anak (FTP-data, ICMP err)</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container flex items-center justify-between">
+<span class="text-error font-semibold">INVALID</span>
+<span class="text-on-surface-variant">Out-of-window seq / flag rusak</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container flex items-center justify-between">
+<span class="text-tertiary-fixed-dim font-semibold">UNTRACKED</span>
+<span class="text-on-surface-variant">Bypass via Raw PREROUTING</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md font-body-sm text-body-sm text-on-surface-variant">
+<em>Tip:</em> Jika CPU Router mencapai 100% akibat DDoS SYN-Flood, gunakan tabel <span class="font-label-code text-primary">/ip firewall raw</span> untuk drop paket sebelum masuk conntrack.
+      </div>
+</div>
+<!-- Module 2: FastTrack vs Normal Flow -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between shadow-lg">
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<div>
+<div class="font-label-badge text-label-badge text-outline uppercase">Performance Boost</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mekanisme FastTrack</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          FastTrack memangkas packet processing path di Linux kernel secara radikal untuk paket yang berstatus Established &amp; Related.
+        </p>
+<!-- Inline SVG Performance Chart -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest">
+<div class="font-label-badge text-label-badge text-outline uppercase mb-2">Throughput Bandwidth vs CPU Load</div>
+<svg class="w-full h-24 overflow-visible" viewbox="0 0 300 110">
+<!-- Grid Lines -->
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="2 2" x1="10" x2="290" y1="10" y2="10"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="2 2" x1="10" x2="290" y1="55" y2="55"></line>
+<line class="text-surface-variant" stroke="currentColor" x1="10" x2="290" y1="100" y2="100"></line>
+<!-- Standard Path Curve -->
+<path d="M 10 95 Q 120 70 290 55" fill="none" stroke="#ef4444" stroke-width="2.5"></path>
+<!-- FastTrack Path Curve -->
+<path d="M 10 95 Q 120 40 290 15" fill="none" stroke="#00f5d4" stroke-width="3"></path>
+<circle cx="290" cy="55" fill="#ef4444" r="4"></circle>
+<circle cx="290" cy="15" fill="#00f5d4" r="4"></circle>
+<text fill="#ef4444" font-family="JetBrains Mono" font-size="10" x="18" y="48">Normal: ~1.8 Gbps (High CPU)</text>
+<text fill="#00f5d4" font-family="JetBrains Mono" font-size="10" x="18" y="24">FastTrack: ~9.2 Gbps (Low CPU)</text>
+</svg>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          FastTrack melewati layer: Simple Queue, Mangle Sniffing, dan Layer 7 protocol filters untuk mendongkrak switching-rate.
+        </p>
+</div>
+<div class="pt-space-md font-label-badge text-label-badge text-tertiary-fixed-dim uppercase">
+        Catatan: Jangan gunakan FastTrack pada antarmuka yang memerlukan Queue Tree QoS presisi.
+      </div>
+</div>
+<!-- Module 3: Dynamic Blacklisting System -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between shadow-lg">
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">rule_folder</span>
+</div>
+<div>
+<div class="font-label-badge text-label-badge text-outline uppercase">Automated Defense</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Auto-Drop Port Scanner</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Jebakan honeypot dinamis: Setiap entitas eksternal yang mengetuk port terlarang secara otomatis dimasukkan ke <code class="font-label-code text-secondary">Address List</code> penalti.
+        </p>
+<!-- Honeypot Workflow Steps -->
+<div class="space-y-space-xs font-body-sm text-body-sm">
+<div class="flex items-start gap-2 p-2 rounded bg-surface-container">
+<span class="font-label-code text-label-code text-primary-container font-bold">01</span>
+<span class="text-on-surface">Penyerang men-scan port TCP 23 (Telnet), 8080 (Proxy), atau 21 (FTP).</span>
+</div>
+<div class="flex items-start gap-2 p-2 rounded bg-surface-container">
+<span class="font-label-code text-label-code text-secondary font-bold">02</span>
+<span class="text-on-surface">MikroTik memicu action <code class="font-label-code text-primary">add-src-to-address-list</code> timeout 24 jam.</span>
+</div>
+<div class="flex items-start gap-2 p-2 rounded bg-surface-container">
+<span class="font-label-code text-label-code text-error font-bold">03</span>
+<span class="text-on-surface">Aturan RAW teratas langsung men-DROP seluruh paket dari IP tersebut.</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<span class="font-label-code text-label-code text-primary-container text-body-sm block truncate">
+          action=add-src-to-address-list address-list=BLACKLIST timeout=1d
+        </span>
+</div>
+</div>
+</section>
+<!-- Interactive Troubleshooting Lab: Top 5 Pitfalls -->
+<section class="w-full bg-surface-container-low rounded-2xl p-space-lg md:p-space-xl shadow-xl flex flex-col space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<div class="font-label-badge text-label-badge uppercase text-error tracking-wider">Troubleshooting &amp; Diagnostik</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Top 5 Kesalahan Fatal Konfigurasi Firewall MikroTik</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Daftar kekeliruan arsitektur yang sering menyebabkan router terkunci (locked-out) atau jaringan mengalami degradasi performa.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[24px]">bug_report</span>
+<span class="font-label-badge text-label-badge text-tertiary-fixed-dim uppercase">Security Audit Checklist</span>
+</div>
+</div>
+<!-- Accordion / Pitfalls Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Mistake 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between space-y-space-sm">
+<div>
+<div class="flex items-center justify-between text-error font-label-badge text-label-badge uppercase mb-1">
+<span>Kesalahan #01</span>
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Urutan Eksekusi Rule Terbalik</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Meletakkan rule <code class="font-label-code text-error">drop all from WAN</code> SEBELUM rule <code class="font-label-code text-primary">accept established/related</code>. Hal ini memutuskan seluruh sesi browsing internet dari LAN seketika.
+          </p>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest font-label-code text-label-code text-primary-container text-body-sm">
+          Solusi: Urutkan Established/Related selalu di baris paling atas (Index 0/1).
+        </div>
+</div>
+<!-- Mistake 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between space-y-space-sm">
+<div>
+<div class="flex items-center justify-between text-error font-label-badge text-label-badge uppercase mb-1">
+<span>Kesalahan #02</span>
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">NAT Masquerade Tanpa Out-Interface</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Mengatur rule <code class="font-label-code text-secondary">chain=srcnat action=masquerade</code> tanpa mendefinisikan <code class="font-label-code text-error">out-interface=WAN</code>. Menyebabkan paket antar-VLAN lokal ter-NAT dan IP client asli hilang.
+          </p>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest font-label-code text-primary-container text-body-sm">
+          Solusi: Wajib tentukan out-interface-list=WAN pada parameter src-nat.
+        </div>
+</div>
+<!-- Mistake 3 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between space-y-space-sm">
+<div>
+<div class="flex items-center justify-between text-error font-label-badge text-label-badge uppercase mb-1">
+<span>Kesalahan #03</span>
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">DNS Resolver Terbuka ke Publik</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Mengaktifkan opsi <code class="font-label-code text-secondary">Allow Remote Requests</code> di IP DNS tetapi lupa mendrop port UDP/TCP 53 pada antarmuka WAN di INPUT Chain.
+          </p>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest font-label-code text-primary-container text-body-sm">
+          Solusi: Filter chain=input in-interface=WAN protocol=udp dst-port=53 action=drop.
+        </div>
+</div>
+<!-- Mistake 4 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between space-y-space-sm">
+<div>
+<div class="flex items-center justify-between text-error font-label-badge text-label-badge uppercase mb-1">
+<span>Kesalahan #04</span>
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Lupa Mengecualikan FastTrack untuk QoS</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Mengaktifkan Simple Queue untuk pembatasan bandwidth warnet/kantor namun membiarkan rule FastTrack menyala. Akibatnya bandwidth limit jebol karena paket di-bypass.
+          </p>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest font-label-code text-primary-container text-body-sm">
+          Solusi: Matikan FastTrack jika membutuhkan antrian QoS granular (Queue Tree).
+        </div>
+</div>
+<!-- Mistake 5 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between space-y-space-sm">
+<div>
+<div class="flex items-center justify-between text-error font-label-badge text-label-badge uppercase mb-1">
+<span>Kesalahan #05</span>
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Mengunci Diri Sendiri (WinBox Lockout)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Menerapkan aturan <code class="font-label-code text-error">action=drop</code> pada chain input tanpa mengecualikan interface LAN manajemen atau tanpa mengaktifkan <span class="font-semibold text-secondary">Safe Mode</span> (Ctrl+X).
+          </p>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest font-label-code text-primary-container text-body-sm">
+          Solusi: Selalu aktifkan Safe Mode sebelum mengeksekusi rule firewall berisiko tinggi.
+        </div>
+</div>
+<!-- Live Safe Mode Simulation Card -->
+<div class="p-space-md rounded-xl bg-surface-container-highest/40 flex flex-col justify-between space-y-space-sm">
+<div>
+<div class="flex items-center gap-2 text-primary font-label-badge text-label-badge uppercase mb-1">
+<span class="material-symbols-outlined text-[18px]">health_and_safety</span>
+<span>MikroTik Best Habit</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Kaidah Operasional Safe Mode</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Tombol <strong>Safe Mode</strong> di WinBox atau shortcut CLI <kbd class="px-1.5 py-0.5 rounded bg-surface-container-low font-label-code text-primary-container">Ctrl+X</kbd> akan otomatis mengembalikan (rollback) konfigurasi jika sesi koneksi Anda terputus.
+          </p>
+</div>
+<button class="w-full py-space-xs rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge uppercase flex items-center justify-center gap-2 transition-all" id="btn-toggle-safe-mode">
+<span class="w-2 h-2 rounded-full bg-outline" id="safe-mode-dot"></span>
+<span id="safe-mode-text">Safe Mode: Standby</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Final Operational Telemetry Dock -->
+<footer class="w-full p-space-md rounded-xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container">terminal</span>
+<span class="font-label-code text-label-code text-body-sm">
+        MikroTik RouterOS Architecture Reference Manual // Lab Environment v7.x
+      </span>
+</div>
+<div class="flex items-center gap-space-md font-label-badge text-label-badge uppercase">
+<span class="flex items-center gap-1.5 text-primary">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> Filter Table Sync: Active
+      </span>
+<span class="text-outline">Checksum: 0x8FA2_OK</span>
+</div>
+</footer>
+</div>
+<script>
+  // Interactive Flow Node Inspector logic
+  const inspectorTitle = document.getElementById('inspector-title');
+  const inspectorDesc = document.getElementById('inspector-desc');
+  const inspectorBox = document.getElementById('flow-inspector-box');
+
+  const nodes = {
+    ingress: {
+      title: 'Physical Ingress & Bridge Decision',
+      desc: 'Paket pertama tiba di port fisik (ether/sfp/wlan). Router memeriksa encapsulation IEEE 802.1Q VLAN tag, MAC header, dan menentukan apakah interface berupa routed interface L3 atau port bridge L2.'
+    },
+    prerouting: {
+      title: 'Prerouting (Mangle & DST-NAT)',
+      desc: 'Diproses SEBELUM routing decision. Tahap ini bertugas mengubah alamat IP tujuan (Destination NAT / Port Forwarding), menandai koneksi (connection mark), atau menandai paket QoS di tabel Mangle.'
+    },
+    decision: {
+      title: 'Routing Decision (Penentuan Jalur)',
+      desc: 'Kernel mengecek Destination IP terhadap Local Routing Table (FIB). Jika IP tujuan sama dengan alamat IP yang menempel di Router MikroTik, paket dilempar ke INPUT Chain. Jika ditujukan ke luar, paket menuju FORWARD Chain.'
+    },
+    input: {
+      title: 'INPUT Chain (Filter Router Host)',
+      desc: 'Memfilter paket yang ditujukan langsung ke sistem operasi RouterOS (port 8291 Winbox, 22 SSH, 80 Web, UDP 53 DNS). Aturan ini krusial untuk mencegah router dibajak atau mengalami Denial of Service.'
+    },
+    forward: {
+      title: 'FORWARD Chain (Filter Transit Klien)',
+      desc: 'Memfilter paket yang hanya melintasi router (misalnya komputer kantor mengakses Google, atau isolasi antar VLAN Finance dan Guest). Paket tidak dikonsumsi CPU router melainkan diteruskan ke Egress port.'
+    },
+    output: {
+      title: 'OUTPUT Chain (Filter Origin RouterOS)',
+      desc: 'Memfilter paket yang diciptakan langsung oleh proses lokal RouterOS menuju keluar (misal: router melakukan ping ke gateway ISP, query DNS upstream 1.1.1.1, atau update package RouterOS).'
+    },
+    postrouting: {
+      title: 'Postrouting (Mangle & S-NAT / Masquerade)',
+      desc: 'Tahap final sebelum paket meninggalkan router (Egress). Mengubah IP pengirim lokal (Private IP 192.168.x.x) menjadi IP Publik router menggunakan mekanisme Source NAT (Masquerade).'
+    }
+  };
+
+  function updateInspector(key) {
+    if (nodes[key]) {
+      inspectorTitle.textContent = nodes[key].title;
+      inspectorDesc.textContent = nodes[key].desc;
+      inspectorBox.classList.add('ring-1', 'ring-primary-container');
+      setTimeout(() => {
+        inspectorBox.classList.remove('ring-1', 'ring-primary-container');
+      }, 500);
+    }
+  }
+
+  document.getElementById('node-ingress')?.addEventListener('click', () => updateInspector('ingress'));
+  document.getElementById('node-prerouting')?.addEventListener('click', () => updateInspector('prerouting'));
+  document.getElementById('node-decision')?.addEventListener('click', () => updateInspector('decision'));
+  document.getElementById('card-chain-input')?.addEventListener('click', () => updateInspector('input'));
+  document.getElementById('card-chain-forward')?.addEventListener('click', () => updateInspector('forward'));
+  document.getElementById('card-chain-output')?.addEventListener('click', () => updateInspector('output'));
+  document.getElementById('node-postrouting')?.addEventListener('click', () => updateInspector('postrouting'));
+
+  // Flow Filter Buttons
+  const btnAll = document.getElementById('btn-flow-all');
+  const btnInput = document.getElementById('btn-flow-input');
+  const btnFwd = document.getElementById('btn-flow-fwd');
+  const cardInput = document.getElementById('card-chain-input');
+  const cardFwd = document.getElementById('card-chain-forward');
+  const cardOut = document.getElementById('card-chain-output');
+
+  function resetFlowTabs() {
+    [btnAll, btnInput, btnFwd].forEach(b => {
+      b.classList.remove('bg-primary-container', 'text-on-primary', 'font-semibold');
+      b.classList.add('text-on-surface-variant');
+    });
+    cardInput.classList.remove('opacity-25');
+    cardFwd.classList.remove('opacity-25');
+    cardOut.classList.remove('opacity-25');
+  }
+
+  btnAll?.addEventListener('click', () => {
+    resetFlowTabs();
+    btnAll.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold');
+    btnAll.classList.remove('text-on-surface-variant');
+    updateInspector('prerouting');
+  });
+
+  btnInput?.addEventListener('click', () => {
+    resetFlowTabs();
+    btnInput.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold');
+    btnInput.classList.remove('text-on-surface-variant');
+    cardFwd.classList.add('opacity-25');
+    cardOut.classList.add('opacity-25');
+    updateInspector('input');
+  });
+
+  btnFwd?.addEventListener('click', () => {
+    resetFlowTabs();
+    btnFwd.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold');
+    btnFwd.classList.remove('text-on-surface-variant');
+    cardInput.classList.add('opacity-25');
+    cardOut.classList.add('opacity-25');
+    updateInspector('forward');
+  });
+
+  // Copy Single Rule to Clipboard
+  const singleRules = {
+    '1': '/ip firewall filter add chain=forward action=fasttrack-connection connection-state=established,related comment="defconf: fasttrack"',
+    '2': '/ip firewall filter add chain=forward action=accept connection-state=established,related,untracked\n/ip firewall filter add chain=input action=accept connection-state=established,related,untracked',
+    '3': '/ip firewall filter add chain=forward action=drop connection-state=invalid\n/ip firewall filter add chain=input action=drop connection-state=invalid',
+    '4': '/ip firewall filter add chain=input action=accept protocol=icmp limit=5,10:packet comment="accept ICMP rate limited"',
+    '5': '/ip firewall filter add chain=input action=drop in-interface-list=WAN protocol=udp dst-port=53 comment="drop open DNS recursion from WAN"',
+    '6': '/ip firewall filter add chain=input action=drop in-interface-list=WAN comment="drop all WAN to router"',
+    '7': '/ip firewall filter add chain=forward action=drop connection-state=new connection-nat-state=!dstnat in-interface-list=WAN comment="drop invalid incoming WAN"'
+  };
+
+  document.querySelectorAll('.rule-copy-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = btn.getAttribute('data-rule-index');
+      if (singleRules[idx]) {
+        navigator.clipboard.writeText(singleRules[idx]);
+        const origHtml = btn.innerHTML;
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-primary-container">check</span>';
+        setTimeout(() => {
+          btn.innerHTML = origHtml;
+        }, 1500);
+      }
+    });
+  });
+
+  // Copy Full CLI Script Button
+  document.getElementById('copy-all-rules-btn')?.addEventListener('click', function() {
+    const codeSnippet = document.getElementById('code-snippet-terminal')?.innerText || '';
+    navigator.clipboard.writeText(codeSnippet);
+    const originalText = this.innerHTML;
+    this.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span> Berhasil Disalin!';
+    setTimeout(() => {
+      this.innerHTML = originalText;
+    }, 2000);
+  });
+
+  // Safe Mode Toggle Simulation
+  const btnSafeMode = document.getElementById('btn-toggle-safe-mode');
+  const safeModeDot = document.getElementById('safe-mode-dot');
+  const safeModeText = document.getElementById('safe-mode-text');
+  let isSafeMode = false;
+
+  btnSafeMode?.addEventListener('click', () => {
+    isSafeMode = !isSafeMode;
+    if (isSafeMode) {
+      safeModeDot.classList.remove('bg-outline');
+      safeModeDot.classList.add('bg-primary-container', 'animate-ping');
+      safeModeText.textContent = 'Safe Mode: ACTIVE (Auto Rollback Enabled)';
+      btnSafeMode.classList.add('bg-primary-container/20', 'text-primary-container');
+    } else {
+      safeModeDot.classList.add('bg-outline');
+      safeModeDot.classList.remove('bg-primary-container', 'animate-ping');
+      safeModeText.textContent = 'Safe Mode: Standby';
+      btnSafeMode.classList.remove('bg-primary-container/20', 'text-primary-container');
+    }
+  });
+</script></main></div></body></html>

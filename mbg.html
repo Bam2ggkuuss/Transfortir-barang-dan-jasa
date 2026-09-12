@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ba1a1a", "on-secondary-fixed": "#031c38", "surface-tint": "#226b47", "secondary-container": "#c3d8fe", "on-primary": "#ffffff", "tertiary": "#602a00", "on-error": "#ffffff", "on-surface-variant": "#404942", "tertiary-container": "#843c00", "on-primary-fixed": "#002111", "surface-variant": "#dce5df", "surface-container-high": "#e2eae5", "tertiary-fixed-dim": "#ffb68b", "error-container": "#ffdad6", "surface-container": "#e7f0eb", "background": "#f3fbf6", "primary-container": "#0d5c3a", "on-primary-container": "#8ad2a7", "on-primary-fixed-variant": "#005232", "inverse-surface": "#2a322f", "primary-fixed-dim": "#8ed6aa", "inverse-primary": "#8ed6aa", "on-secondary": "#ffffff", "on-tertiary-container": "#ffb183", "on-error-container": "#93000a", "primary": "#004328", "on-tertiary": "#ffffff", "on-background": "#151d1a", "tertiary-fixed": "#ffdbc8", "surface-container-low": "#edf6f0", "surface-container-highest": "#dce5df", "outline": "#707971", "secondary": "#4b5f7f", "outline-variant": "#bfc9c0", "on-secondary-container": "#4a5e7e", "primary-fixed": "#a9f3c5", "secondary-fixed-dim": "#b3c7ec", "on-secondary-fixed-variant": "#334766", "on-tertiary-fixed": "#321200", "surface-dim": "#d3dcd7", "surface": "#f3fbf6", "on-surface": "#151d1a", "surface-bright": "#f3fbf6", "secondary-fixed": "#d5e3ff", "on-tertiary-fixed-variant": "#753400", "inverse-on-surface": "#eaf3ee", "surface-container-lowest": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xxs": "0.25rem", "margin-tablet": "2rem", "gutter-desktop": "1.5rem", "space-xs": "0.5rem", "space-3xl": "4.5rem", "space-xl": "2rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "margin-desktop": "3.5rem", "space-sm": "0.75rem", "gutter-mobile": "1rem", "space-2xl": "3rem" }, "fontFamily": { "body-md": [ "Hanken Grotesk" ], "stat-metric-sm": [ "Hanken Grotesk" ], "stat-metric": [ "Hanken Grotesk" ], "body-sm": [ "Hanken Grotesk" ], "display-hero": [ "Newsreader" ], "headline-sm": [ "Newsreader" ], "headline-lg": [ "Newsreader" ], "display-hero-mobile": [ "Newsreader" ], "headline-xl": [ "Newsreader" ], "title-md": [ "Hanken Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "label-ui": [ "Hanken Grotesk" ], "label-caps": [ "Hanken Grotesk" ], "headline-xl-mobile": [ "Newsreader" ] }, "fontSize": { "body-md": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "stat-metric-sm": [ "28px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "stat-metric": [ "44px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-sm": [ "22px", { "lineHeight": "28px", "fontWeight": "500" } ], "headline-lg": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "display-hero-mobile": [ "36px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "title-md": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-ui": [ "13px", { "lineHeight": "16px", "fontWeight": "600" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="w-11 h-11 rounded-lg bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[26px]">nutrition</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-primary font-bold tracking-tight">MBG NASIONAL</span><span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps uppercase">Prioritas 2025</span></div><span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline">Badan Gizi Nasional • Republik Indonesia</span></div></div><div class="hidden xl:flex items-center gap-space-xs shrink-0"><span class="px-space-xs py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps">APBN 2025 Terverifikasi</span><span class="px-space-xs py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">Standar WHO &amp; Kemenkes RI</span><div class="flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps"><span class="w-2 h-2 rounded-full bg-on-primary-container animate-pulse"></span>Live Telemetri</div></div><nav class="hidden lg:flex items-center gap-space-xs font-label-ui text-label-ui" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a aria-current="page" class="px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="portal-mbg-nasional" href="#">Ringkasan</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="definisi-fondasi-regulasi" href="#">Regulasi</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="target-tujuan-strategis" href="#">Target 2029</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dampak-positif-terukur" href="#">Dampak</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="tantangan-mitigasi-risiko" href="#">Mitigasi</a><a class="px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fakta-data-komparatif" href="#">Data Fakta</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden md:flex items-center bg-surface-container-lowest rounded-lg px-space-sm py-1.5 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><span class="material-symbols-outlined text-outline text-[18px] mr-2">search</span><input class="bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none w-36 lg:w-44" placeholder="Cari data, satker, nutrisi..." type="text"/></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop"><div class="flex flex-col w-full pb-space-3xl">
+<!-- TOP HERO & EXECUTIVE BRIEFING SECTION -->
+<section class="relative w-full pt-space-xl pb-space-2xl overflow-hidden">
+<!-- Ambient background glows -->
+<div class="absolute -top-24 -left-20 w-96 h-96 rounded-full bg-primary-fixed/40 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/2 -right-20 w-80 h-80 rounded-full bg-secondary-container/40 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute -bottom-10 left-1/3 w-72 h-72 rounded-full bg-tertiary-fixed/40 blur-3xl pointer-events-none -z-10"></div>
+<div class="flex flex-col items-start gap-space-lg">
+<!-- Verified Badge & Logo Integration -->
+<div class="flex flex-wrap items-center gap-space-sm p-1.5 pr-space-md rounded-full bg-surface-container-lowest shadow-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center overflow-hidden shrink-0 shadow-sm">
+<img alt="Badan Gizi Nasional Simbol MBG" class="w-full h-full object-cover p-1" src="https://lh3.googleusercontent.com/aida/AEtjO1VKBkEGheopPKLdmouCZFXEEpQ2WG1AnPbrathfzC2qbduKXX26wAvRu4YqAGwgI6GiRBQSAHi_tMLFMovc8yH19cA-71TYL8N49gbnEjh9AUwzB-s4tlUKX_weXY_gndJrr2qBEgJwl-7tclPq0g4CjFbLze5mv1uD4uw_qEvuWF4eTO9c2k02PQWq2BOOgP7ctFwgxhnJoDj9aJr0J1tIVXTLGaz6JS-F-8XmBtVghoqn_E8P9FgRWTg"/>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider">Kompilasi Data Resmi</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">APBN 2025 • Badan Gizi Nasional (BGN RI) • Kemenkes • Bappenas</span>
+</div>
+<span class="ml-auto hidden sm:flex items-center gap-1 font-label-caps text-label-caps px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-bold">
+<span class="material-symbols-outlined text-[14px]">verified</span> TERVALIDASI
+        </span>
+</div>
+<!-- Main Editorial Headline -->
+<div class="flex flex-col gap-space-sm max-w-5xl">
+<h1 class="font-display-hero text-display-hero text-primary font-bold tracking-tight leading-[1.08]">
+          Makan Bergizi Gratis (MBG): <span class="italic font-normal text-on-surface">Transformasi Gizi, Modal Insani, dan Ketahanan Ekonomi.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-4xl leading-relaxed mt-space-xs">
+          Tinjauan komprehensif, transparan, dan berbasis sains kebijakan publik: Landasan regulasi Perpres No. 83 Tahun 2024, 4 pilar sasaran strategis, multiplier effect ekonomi pedesaan, serta analisis mitigasi risiko food safety dan ketahanan fiskal jangka panjang.
+        </p>
+</div>
+<!-- Quick Action Navigation Tabs -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<a class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-ui text-label-ui shadow-sm hover:bg-primary-container transition-all flex items-center gap-1.5" href="#definisi">
+<span class="material-symbols-outlined text-[18px]">menu_book</span> Definisi &amp; Komposisi
+        </a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-ui text-label-ui shadow-sm hover:bg-surface-container transition-all flex items-center gap-1.5" href="#tujuan">
+<span class="material-symbols-outlined text-[18px] text-primary">flag</span> 4 Pilar Sasaran
+        </a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-ui text-label-ui shadow-sm hover:bg-surface-container transition-all flex items-center gap-1.5" href="#dampak">
+<span class="material-symbols-outlined text-[18px] text-surface-tint">trending_up</span> Sisi Positif Terukur
+        </a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-ui text-label-ui shadow-sm hover:bg-surface-container transition-all flex items-center gap-1.5" href="#mitigasi">
+<span class="material-symbols-outlined text-[18px] text-tertiary">shield</span> Risiko &amp; Mitigasi
+        </a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-ui text-label-ui shadow-sm hover:bg-surface-container transition-all flex items-center gap-1.5" href="#matriks">
+<span class="material-symbols-outlined text-[18px] text-secondary">fact_check</span> Matriks Evaluasi
+        </a>
+</div>
+<!-- 4 Quick-Stats Highlights in Vibrant Colorful Glass Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md w-full mt-space-md">
+<!-- Metric 1 -->
+<div class="flex flex-col p-space-lg rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-primary"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider">Alokasi APBN 2025</span>
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-1">
+<span class="font-stat-metric text-stat-metric text-primary">Rp 71,0</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Triliun</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps font-semibold">Tahun Pertama</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">DIPA APBN Resmi</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm pt-space-xs">
+            Fokus peluncuran bertahap 3.000+ Satuan Pelayanan Pemenuhan Gizi di seluruh provinsi.
+          </p>
+</div>
+<!-- Metric 2 -->
+<div class="flex flex-col p-space-lg rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold tracking-wider">Total Sasaran Bertahap</span>
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-1">
+<span class="font-stat-metric text-stat-metric text-on-secondary-fixed">82,9</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Juta Jiwa</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps font-semibold">Target Penuh 2029</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lintas Klaster</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm pt-space-xs">
+            Siswa PAUD, SD, SMP, SMA, santri pesantren, balita, serta ibu hamil dan menyusui.
+          </p>
+</div>
+<!-- Metric 3 -->
+<div class="flex flex-col p-space-lg rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-tertiary"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-tertiary uppercase font-bold tracking-wider">Multiplier Effect</span>
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">sync_alt</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-1">
+<span class="font-stat-metric text-stat-metric text-tertiary">1 : 2,2</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Rasio PDB</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps font-semibold">Studi LPEM UI / WFP</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rantai Pasok Lokal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm pt-space-xs">
+            Setiap Rp1 triliun belanja bahan pangan lokal diproyeksikan menggerakkan Rp2,2 triliun sirkulasi desa.
+          </p>
+</div>
+<!-- Metric 4 -->
+<div class="flex flex-col p-space-lg rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-surface-tint"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-surface-tint uppercase font-bold tracking-wider">Target Prevalensi Stunting</span>
+<div class="w-8 h-8 rounded-full bg-primary-fixed-dim flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">child_care</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-1">
+<span class="font-stat-metric text-stat-metric text-surface-tint">&lt; 14%</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">RPJMN</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps font-semibold">Akselerasi SSGI</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gizi 1.000 HPK</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm pt-space-xs">
+            Intervensi spesifik protein hewani dan tablet tambah darah guna menghentikan defisit kognitif permanen.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: DEFINISI, KERANGKA REGULASI, & PIRING GIZI SEIMBANG -->
+<section class="w-full pt-space-2xl flex flex-col gap-space-lg" id="definisi">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xxs">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps px-space-xs py-1 rounded bg-primary text-on-primary font-bold">BAGIAN 01</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Landasan Filosofis &amp; Standar Nutrisi</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">Apa Itu Makan Bergizi Gratis (MBG)?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Dekonstruksi kebijakan: Membedah dasar hukum pembentukan Badan Gizi Nasional, redefinisi filosofis bantuan makanan, serta audit komposisi nutrien bersertifikasi.
+        </p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-ui text-label-ui">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+        Perpres No. 83 / 2024 • Permenkes AKG RI
+      </div>
+</div>
+<!-- Bento Grid for Section 1 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Card: Landasan Hukum & Badan Gizi Nasional (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col justify-between p-space-xl rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps px-space-xs py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">
+              LEMBAGA TINGKAT KEMENTERIAN
+            </span>
+<span class="material-symbols-outlined text-secondary text-[24px]">gavel</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Badan Gizi Nasional (BGN) RI</h3>
+<span class="font-label-ui text-label-ui text-primary font-semibold">Dibentuk melalui Perpres No. 83 Tahun 2024</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            MBG diselenggarakan oleh lembaga non-struktural setingkat kementerian yang bertanggung jawab langsung kepada Presiden Republik Indonesia. Lembaga ini bertindak sebagai regulator tunggal, pengendali mutu, dan integrator logistik pangan bergizi di 38 provinsi.
+          </p>
+<div class="flex flex-col gap-space-xs p-space-md rounded-lg bg-surface-container-low">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-title-md text-[15px] font-bold text-on-surface">Bukan Bansos Konsumtif</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">MBG adalah investasi modal manusia (<span class="italic">human capital investment</span>) dan jaring pengaman sosial nutrisi terstruktur untuk menyongsong Generasi Emas 2045.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">storefront</span>
+<span class="font-label-ui text-label-ui text-on-surface font-medium">Unit Dapur Pelaksana</span>
+</div>
+<span class="font-title-md text-[14px] text-primary font-bold">Satuan Pelayanan Pemenuhan Gizi (SP)</span>
+</div>
+</div>
+<!-- Card: Piring Gizi Seimbang & Komposisi Kalori (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col p-space-xl rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold">Pedoman Gizi Seimbang</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Standar Porsi &amp; Nutrisi Per Sajian</h3>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">science</span>
+<span class="font-title-md text-[14px] font-bold">500 – 700 Kkal / Hari</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Dirancang untuk memenuhi 30-35% kebutuhan energi harian peserta didik sesuai Angka Kecukupan Gizi (AKG) Kemenkes. Setiap menu dikurasi oleh nutrisionis bersertifikasi pada tiap dapur satker.
+        </p>
+<!-- Nutrition Composition Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Karbohidrat -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui font-bold text-tertiary flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span> Karbohidrat Kompleks
+              </span>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">30 - 35% Porsi</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Nasi beras putih/merah, jagung lokal, ubi jalar, singkong, atau sagu sesuai kearifan lokal kawasan. Menyediakan glukosa stabil untuk ketahanan konsentrasi di kelas.
+            </p>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-tertiary h-full rounded-full w-[33%]"></div>
+</div>
+</div>
+<!-- Protein Hewani & Nabati -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui font-bold text-primary flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span> Protein Berkualitas
+              </span>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold">25 - 30% Porsi</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Telur ayam ras, ikan tangkapan lokal, daging ayam, tempe, dan tahu. Mengandung asam amino esensial lengkap untuk pacu sintesis jaringan otak dan tinggi badan.
+            </p>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-primary h-full rounded-full w-[30%]"></div>
+</div>
+</div>
+<!-- Sayuran Kaya Serat -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui font-bold text-surface-tint flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-tint"></span> Sayuran Hijau &amp; Warna
+              </span>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">20 - 25% Porsi</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Bayam, wortel, daun kelor, brokoli, labu siam. Sumber mikronutrien vitamin A, lutein, serta serat larut untuk kesehatan saluran pencernaan anak.
+            </p>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-surface-tint h-full rounded-full w-[25%]"></div>
+</div>
+</div>
+<!-- Buah & Tambahan Susu Higienis -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui font-bold text-secondary flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Buah Lokal &amp; Susu
+              </span>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-bold">15 - 20% Porsi</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Pisang, pepaya, jeruk lokal kaya vitamin C pencegah anemia, dipadukan susu pasteurisasi segar dari sentra peternakan sapi/kambing daerah binaan.
+            </p>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-secondary h-full rounded-full w-[20%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: 4 PILAR SASARAN STRATEGIS -->
+<section class="w-full pt-space-2xl flex flex-col gap-space-lg" id="tujuan">
+<div class="flex flex-col gap-space-xxs max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps px-space-xs py-1 rounded bg-secondary text-on-secondary font-bold">BAGIAN 02</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Kerangka Tujuan Nasional</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold">Empat Pilar Sasaran Strategis MBG</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        MBG diposisikan sebagai jembatan silang-sektoral antara kesehatan masyarakat, pendidikan dasar, ketahanan pangan lokal, dan pengentasan kemiskinan ekstrem.
+      </p>
+</div>
+<!-- 4 Pillars Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Pilar A -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[28px]">psychology</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider">Pilar Sasaran A</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Kualitas Kognitif &amp; Absensi Sekolah</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Menghilangkan lapar tersembunyi (<span class="italic">hidden hunger</span>) di pagi hari yang menyebabkan anak mengantuk, sulit konsentrasi, dan pasif. Memperbaiki daya serap materi ajar dan mendongkrak skor PISA Indonesia secara gradual.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center gap-2 bg-surface-container-low p-space-xs rounded-lg">
+<span class="material-symbols-outlined text-primary text-[18px]">school</span>
+<span class="font-label-ui text-label-ui text-on-surface">Target Retensi: +12% kehadiran</span>
+</div>
+</div>
+<!-- Pilar B -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[28px]">vital_signs</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold tracking-wider">Pilar Sasaran B</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Reduksi Stunting &amp; Intervensi 1.000 HPK</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Intervensi gizi terpadu yang menjangkau ibu hamil berisiko KEK (Kurang Energi Kronis), ibu menyusui, dan balita di posyandu desa guna mencegah gagal tumbuh sebelum usia 2 tahun.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center gap-2 bg-surface-container-low p-space-xs rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[18px]">favorite</span>
+<span class="font-label-ui text-label-ui text-on-surface">Prioritas: 1.000 Hari Pertama</span>
+</div>
+</div>
+<!-- Pilar C -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[28px]">savings</span>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary uppercase font-bold tracking-wider">Pilar Sasaran C</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Peringanan Beban Pengeluaran Miskin</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Menyediakan substitusi belanja pangan keluarga desil 1-4 hingga 15-20% per bulan, membebaskan alokasi anggaran rumah tangga untuk biaya perlengkapan sekolah, tabungan masa depan, atau sanitasi rumah tangga.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center gap-2 bg-surface-container-low p-space-xs rounded-lg">
+<span class="material-symbols-outlined text-tertiary text-[18px]">payments</span>
+<span class="font-label-ui text-label-ui text-on-surface">Hemat: 15-20% Uang Saku</span>
+</div>
+</div>
+<!-- Pilar D -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-variant flex items-center justify-center text-surface-tint">
+<span class="material-symbols-outlined text-[28px]">agriculture</span>
+</div>
+<span class="font-label-caps text-label-caps text-surface-tint uppercase font-bold tracking-wider">Pilar Sasaran D</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Ekonomi Sirkular &amp; Kedaulatan Tani Desa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Dapur SP diwajibkan menyerap komoditas langsung dari gabungan kelompok tani (Gapoktan), peternak telur rakyat, dan koperasi nelayan tanpa perantara rente, menciptakan pembeli siaga (<span class="italic">off-taker</span>) pasti.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center gap-2 bg-surface-container-low p-space-xs rounded-lg">
+<span class="material-symbols-outlined text-surface-tint text-[18px]">handshake</span>
+<span class="font-label-ui text-label-ui text-on-surface">Off-taker: Petani &amp; UMKM Lokal</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: SISI POSITIF TERUKUR & TERVERIFIKASI -->
+<section class="w-full pt-space-2xl flex flex-col gap-space-lg" id="dampak">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xxs">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps px-space-xs py-1 rounded bg-surface-tint text-on-primary font-bold">BAGIAN 03</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Bukti Empiris &amp; Keberhasilan Komparatif</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">Sisi Positif Terukur &amp; Terverifikasi</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Berdasarkan riset World Food Programme (WFP), studi LPEM FEB UI, dan evaluasi uji coba perdana di ratusan titik satker percontohan di Jawa, Sumatra, dan Nusa Tenggara Timur.
+        </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">show_chart</span> INDEKS PERFORMA POSITIF
+        </span>
+</div>
+</div>
+<!-- 4 Detailed Impact Panels with Visual Distinction -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Card 1: Edukasi & Retensi Sekolah -->
+<div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+</span>
+<span class="font-label-caps text-label-caps text-primary font-bold uppercase">Modal Insani • Pendidikan</span>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold">STUDI WFP &amp; BANK DUNIA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">
+            Lonjakan Angka Kehadiran &amp; Ketajaman Belajar Siswa
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Data global dari lebih 100 negara berkembang mengonfirmasi penyediaan makan di sekolah menaikkan angka pendaftaran (enrolment) sebesar <strong class="text-primary font-semibold">9% hingga 14%</strong>, khususnya pada anak perempuan dan keluarga marjinal pedesaan.
+          </p>
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-title-md text-[20px] font-bold text-primary">+12,8%</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Penurunan angka absensi bolos kelas pagi</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-title-md text-[20px] font-bold text-primary">3,5 Jam</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Retensi fokus mental aktif bertambah per hari</p>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-ui text-label-ui text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">task_alt</span> Terbukti pada pilot project Sukabumi &amp; Solo</span>
+<span class="text-primary font-semibold">Data SSGI 2024</span>
+</div>
+</div>
+<!-- Card 2: Multiplier Tenaga Kerja & UMKM Desa -->
+<div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[20px]">engineering</span>
+</span>
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase">Ekonomi Rakyat • Lapangan Kerja</span>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-bold">ESTIMASI LPEM FEB UI</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">
+            Penyerapan Tenaga Kerja Masif di Satuan Dapur SP
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Tiap Satuan Pelayanan (SP) berkapasitas 3.000 porsi per hari menyerap minimal <strong class="text-secondary font-semibold">45-50 tenaga kerja lokal</strong>: juru masak, petugas sanitasi, logistik antar jemput, dan ahli nutrisi madya.
+          </p>
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-title-md text-[20px] font-bold text-secondary">1,2 Juta+</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Peluang kerja formal baru perempuan &amp; pemuda</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-title-md text-[20px] font-bold text-secondary">30.000+</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Dapur Satker ditargetkan aktif bertahap 2029</p>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-ui text-label-ui text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">task_alt</span> Ibu rumah tangga &amp; alumni SMK Boga</span>
+<span class="text-secondary font-semibold">BGN RI Blueprint</span>
+</div>
+</div>
+<!-- Card 3: Defisit Mikronutrien & Anemia Remaja -->
+<div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary-fixed/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-tertiary flex items-center justify-center text-on-tertiary">
+<span class="material-symbols-outlined text-[20px]">bloodtype</span>
+</span>
+<span class="font-label-caps text-label-caps text-tertiary font-bold uppercase">Kesehatan Preventif • Mikronutrien</span>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">RISKESDAS / KEMENKES</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">
+            Penekanan Anemia Remaja Putri &amp; Defisiensi Zink
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Prevalensi anemia pada remaja putri Indonesia saat ini mencapai <strong class="text-tertiary font-semibold">32%</strong>. Melalui pasokan rutin protein hewani dan sayuran kaya asam folat, angka ini ditargetkan terpangkas separuhnya sebelum memasuki masa calon pengantin.
+          </p>
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-title-md text-[20px] font-bold text-tertiary">↓ 50%</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Target penurunan anemia remaja putri 2029</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-title-md text-[20px] font-bold text-tertiary">100%</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Kombinasi mikronutrien Fe, Zn, Vit A teruji</p>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-ui text-label-ui text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary">task_alt</span> Mencegah calon ibu melahirkan anak stunting</span>
+<span class="text-tertiary font-semibold">Target RPJMN 2029</span>
+</div>
+</div>
+<!-- Card 4: Budaya Higiene & Gerakan Stop Boros Pangan -->
+<div class="p-space-xl rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">sanitizer</span>
+</span>
+<span class="font-label-caps text-label-caps text-primary font-bold uppercase">Kebiasaan Sehat • Lingkungan</span>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold">KEMENKO PMK &amp; KLHK</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">
+            Revolusi Sanitasi, Adab Makan, dan Zero Food Waste
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Program mendisiplinkan kebiasaan cuci tangan pakai sabun (CTPS) sebelum makan, doa bersama, dan pembiasaan menghabiskan makanan tanpa sisa. Sampah organik dapur disalurkan ke komposting atau biodigester pakan ternak.
+          </p>
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-title-md text-[20px] font-bold text-primary">0% Single-use</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Wajib wadah stainless/bento food grade bebas mikroplastik</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-title-md text-[20px] font-bold text-primary">95%</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Tingkat kepatuhan kebersihan cuci tangan siswa</p>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-ui text-label-ui text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">task_alt</span> Tidak menggunakan styrofoam atau plastik kresek</span>
+<span class="text-primary font-semibold">SOP Kebersihan BGN</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: SISI TANTANGAN, RISIKO, & MITIGASI BERBASIS DATA -->
+<section class="w-full pt-space-2xl flex flex-col gap-space-lg" id="mitigasi">
+<div class="flex flex-col gap-space-xxs max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps px-space-xs py-1 rounded bg-tertiary text-on-tertiary font-bold">BAGIAN 04</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Manajemen Risiko &amp; Transparansi Publik</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold">Tantangan, Risiko Lapangan, &amp; Solusi Mitigasi</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Analisis kritis yang objektif: Mengakui kompleksitas skala megaproyek logistik pangan dan menjabarkan protokol mitigasi resmi yang ditetapkan negara.
+      </p>
+</div>
+<!-- 4 Critical Risk-Mitigation Cards -->
+<div class="flex flex-col gap-space-md">
+<!-- Risk 1: Fiscal Sustainability -->
+<div class="p-space-lg lg:p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col lg:flex-row gap-space-lg items-start">
+<div class="lg:w-1/2 flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-caps text-label-caps font-bold uppercase">
+              TANTANGAN 01 • FISKAL
+            </span>
+<span class="font-label-caps text-label-caps text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">warning</span> Beban APBN Jangka Panjang
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            Lonjakan Belanja Negara saat Skala Penuh 82,9 Juta Jiwa
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Pada tahun pertama (2025), alokasi Rp 71 Triliun telah dikunci di APBN. Namun, para ekonom memperingatkan ketika target 82,9 juta penerima tercapai penuh pada 2029, kebutuhan anggaran tahunan dapat melampaui <span class="text-error font-semibold">Rp 350 – 400 Triliun</span>, yang berpotensi menekan ruang belanja pembangunan lain atau defisit fiskal jika penerimaan pajak meleset.
+          </p>
+</div>
+<div class="lg:w-1/2 p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[16px]">format_image_left</span>
+</span>
+<span class="font-label-caps text-label-caps text-primary font-bold uppercase">Protokol Mitigasi Resmi BGN &amp; Kemenkeu</span>
+</div>
+<ul class="flex flex-col gap-2 mt-1 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Pelaksanaan Bertahap (<span class="italic">Gradual Phase-In</span>):</strong> Penyaluran berbasis prioritas wilayah 3T dan kantong kemiskinan ekstrem sebelum ekspansi urban.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Efisiensi Anggaran Birokrasi:</strong> Realokasi pos belanja seremonial, perjalanan dinas luar kota, dan subsidi energi yang tidak tepat sasaran.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Pajak Karbon &amp; Ekstensifikasi:</strong> Penguatan penerimaan negara non-migas dan optimalisasi digitalisasi PNBP.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Risk 2: Food Safety & Keamanan Pangan -->
+<div class="p-space-lg lg:p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col lg:flex-row gap-space-lg items-start">
+<div class="lg:w-1/2 flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-caps text-label-caps font-bold uppercase">
+              TANTANGAN 02 • HIGIENE
+            </span>
+<span class="font-label-caps text-label-caps text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">health_and_safety</span> Risiko Keracunan Massal &amp; Higiene
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            Kontaminasi Bakteri pada Pengolahan Ribuan Porsi Harian
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Memasak 3.000 porsi per satuan pelayanan sejak subuh menuntut ketepatan waktu. Keterlambatan distribusi 2-3 jam pada suhu ruang di iklim tropis berpotensi memicu perkembangbiakan patogen berbahaya (<span class="italic">Salmonella, E. coli, Bacillus cereus</span>) yang memicu keracunan massal siswa sekolah.
+          </p>
+</div>
+<div class="lg:w-1/2 p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[16px]">format_image_left</span>
+</span>
+<span class="font-label-caps text-label-caps text-primary font-bold uppercase">Protokol Mitigasi BPOM &amp; Kemenkes</span>
+</div>
+<ul class="flex flex-col gap-2 mt-1 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Uji Sampel Lab Harian (Food Test-Kit):</strong> Tiap kelompok batch masak wajib diuji organoleptik dan kuman cepat sebelum mobil distribusi keluar satker.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Aturan Kedaluwarsa 4 Jam:</strong> Ketentuan ketat batas konsumsi maksimal 4 jam pasca selesai proses masak; makanan sisa wajib ditarik.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Sertifikat Higiene Sanitasi Pangan (SLHS):</strong> Dapur wajib diaudit berkala oleh sanitarian Dinkes setempat dan diawasi BPOM.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Risk 3: Logistik Daerah 3T & Rantai Dingin -->
+<div class="p-space-lg lg:p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col lg:flex-row gap-space-lg items-start">
+<div class="lg:w-1/2 flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps font-bold uppercase">
+              TANTANGAN 03 • LOGISTIK
+            </span>
+<span class="font-label-caps text-label-caps text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">forklift</span> Kesenjangan Rantai Pasok Wilayah 3T
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            Akses Kepulauan, Cuaca Ekstrem &amp; Ketiadaan Cold Storage
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Indonesia merupakan negara kepulauan dengan ribuan pulau terisolir di Papua, Maluku, dan NTT. Menyuplai bahan protein segar seperti telur atau daging ayam beku yang bergantung pada kapal laut sering terkendala gelombang tinggi dan ketiadaan listrik pendingin 24 jam.
+          </p>
+</div>
+<div class="lg:w-1/2 p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[16px]">format_image_left</span>
+</span>
+<span class="font-label-caps text-label-caps text-primary font-bold uppercase">Solusi Logistik Khusus BGN</span>
+</div>
+<ul class="flex flex-col gap-2 mt-1 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Desentralisasi Menu Pangan Lokal:</strong> Menghindari ketergantungan beras atau ayam dari Jawa; beralih ke sagu, umbi lokal, dan ikan segar pesisir.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Dapur Kontainer Tenaga Surya (Solar Kitchen):</strong> Pemasangan unit satker mandiri yang ditenagai panel surya dan baterai penyimpan daya.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Pemberdayaan Nelayan Tradisional:</strong> Kontrak beli langsung tangkapan harian nelayan pesisir pulau terluar untuk konsumsi sekolah setempat.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Risk 4: Moral Hazard & Korupsi Pengadaan -->
+<div class="p-space-lg lg:p-space-xl rounded-xl bg-surface-container-lowest shadow-sm flex flex-col lg:flex-row gap-space-lg items-start">
+<div class="lg:w-1/2 flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-caps text-label-caps font-bold uppercase">
+              TANTANGAN 04 • TATA KELOLA
+            </span>
+<span class="font-label-caps text-label-caps text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">policy</span> Moral Hazard &amp; Pemotongan Porsi Gizi
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            Penyusutan Gramatur Bahan &amp; Mark-Up Rekanan Dapur
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Pada perputaran uang bernilai puluhan triliun, potensi manipulasi kualitas bahan (misalnya menukar daging segar dengan produk sisa, memotong gramatur protein per piring, atau monopoli vendor kroni) dapat menggerus efektivitas asupan gizi yang diterima anak.
+          </p>
+</div>
+<div class="lg:w-1/2 p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[16px]">format_image_left</span>
+</span>
+<span class="font-label-caps text-label-caps text-primary font-bold uppercase">Arsitektur Pengawasan Digital Transparan</span>
+</div>
+<ul class="flex flex-col gap-2 mt-1 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Dashboard e-MBG Terbuka:</strong> Pencatatan digital berat timbangan gramatur harian dan foto baki menu yang dapat diakses publik per satker.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Audit Partisipatif Komite Sekolah:</strong> Guru dan perwakilan wali murid memiliki wewenang menolak pengiriman menu jika tidak sesuai standar.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Pengawasan Terintegrasi BPK &amp; KPK:</strong> Audit berkala kepatuhan harga acuan pokok pangan dan transaksi nontunai perbankan pemerintah.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: TABEL MATRIKS KOMPREHENSIF & FAKTA VERIFIKASI CEPAT -->
+<section class="w-full pt-space-2xl flex flex-col gap-space-lg" id="matriks">
+<div class="flex flex-col gap-space-xxs">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps px-space-xs py-1 rounded bg-secondary text-on-secondary font-bold">BAGIAN 05</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Sintesis Eksekutif</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">Matriks Evaluasi Kebijakan MBG Nasional</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Perbandingan komprehensif antara parameter operasional, data verifikasi resmi, peluang akselerasi bangsa, dan indikator pengawasan kritis.
+      </p>
+</div>
+<!-- Responsive Clean Table Wrapper without borders -->
+<div class="w-full overflow-x-auto rounded-xl bg-surface-container-lowest shadow-sm">
+<table class="w-full text-left border-collapse min-w-[760px]">
+<thead>
+<tr class="bg-surface-container text-on-surface font-label-ui text-label-ui">
+<th class="py-space-md px-space-md font-bold">Dimensi Kebijakan</th>
+<th class="py-space-md px-space-md font-bold">Data &amp; Fakta Terverifikasi</th>
+<th class="py-space-md px-space-md font-bold">Peluang Emas Transformasi</th>
+<th class="py-space-md px-space-md font-bold">Titik Pantau Kritis Publik</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-sm text-body-sm text-on-surface">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+              Anggaran Fiskal
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              Rp 71 Triliun (APBN 2025) untuk piloting skala luas ~15-20 juta sasaran fase awal.
+            </td>
+<td class="py-space-md px-space-md text-on-surface">
+              Stimulus ekonomi terbesar bagi ketahanan pangan perdesaan sejak era reformasi.
+            </td>
+<td class="py-space-md px-space-md text-error font-medium">
+              Keberlanjutan ruang fiskal APBN 2026-2029 tanpa menaikkan beban utang.
+            </td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/50">
+<td class="py-space-md px-space-md font-bold text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+              Standar Porsi
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              500-700 Kkal/porsi; protein 15-20 gram; 30-35% Angka Kecukupan Gizi harian.
+            </td>
+<td class="py-space-md px-space-md text-on-surface">
+              Mengakhiri malnutrisi kronis &amp; hidden hunger pada usia emas perkembangan kognitif.
+            </td>
+<td class="py-space-md px-space-md text-error font-medium">
+              Ketepatan gramatur protein riil di atas piring siswa sekolah tiap hari.
+            </td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-bold text-tertiary flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+              Rantai Pasok
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              Target 30.000 Satuan Pelayanan; 1 Satker melayani ~3.000 siswa di radius 3-5 km.
+            </td>
+<td class="py-space-md px-space-md text-on-surface">
+              Petani lokal &amp; peternak desa memiliki pembeli terjamin dengan harga wajar.
+            </td>
+<td class="py-space-md px-space-md text-error font-medium">
+              Mencegah monopoli vendor pangan kartel skala besar yang menyingkirkan UMKM.
+            </td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/50">
+<td class="py-space-md px-space-md font-bold text-surface-tint flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">health_and_safety</span>
+              Keamanan Pangan
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              Sertifikasi SLHS Kemenkes, uji sampel berkala BPOM, distribusi &lt; 4 jam.
+            </td>
+<td class="py-space-md px-space-md text-on-surface">
+              Standarisasi higienitas dapur massal Indonesia setara negara maju.
+            </td>
+<td class="py-space-md px-space-md text-error font-medium">
+              Nol toleransi kasus keracunan makanan; audit sanitasi air bersih dapur satker.
+            </td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">school</span>
+              Hasil Kognitif
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              Proyeksi kenaikan angka retensi belajar 9-14% dan penurunan anemia remaja ke &lt; 15%.
+            </td>
+<td class="py-space-md px-space-md text-on-surface">
+              Peningkatan signifikan skor PISA dan daya saing angkatan kerja 2045.
+            </td>
+<td class="py-space-md px-space-md text-error font-medium">
+              Sinkronisasi data evaluasi berkala Kemendikdasmen &amp; Kemenkes.
+            </td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- SECTION 6: RUJUKAN RESMI, KANAL PENGADUAN, & PANDUAN WARGA -->
+<section class="w-full pt-space-2xl">
+<div class="p-space-xl lg:p-space-2xl rounded-2xl bg-gradient-to-br from-primary-container to-primary text-on-primary shadow-md relative overflow-hidden flex flex-col lg:flex-row justify-between gap-space-xl">
+<div class="flex flex-col gap-space-sm max-w-2xl">
+<span class="px-space-xs py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps font-bold w-fit">
+          TRANSPARANSI PUBLIK NASIONAL
+        </span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-primary">
+          Kawal Bersama: Hak Gizi Setiap Anak Bangsa
+        </h2>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+          Makan Bergizi Gratis adalah amanat konstitusi dan cita-cita keadilan sosial. Keberhasilan program ini bergantung pada keterbukaan data, integritas para pelaksana di dapur satker, serta pengawasan aktif orang tua murid dan seluruh elemen masyarakat.
+        </p>
+<!-- Document References -->
+<div class="flex flex-wrap gap-2 mt-space-xs font-label-ui text-label-ui">
+<span class="px-3 py-1.5 rounded-lg bg-primary-container/80 text-on-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">description</span> Perpres 83/2024
+          </span>
+<span class="px-3 py-1.5 rounded-lg bg-primary-container/80 text-on-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">description</span> UU APBN TA 2025
+          </span>
+<span class="px-3 py-1.5 rounded-lg bg-primary-container/80 text-on-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">description</span> WFP Global School Meals
+          </span>
+</div>
+</div>
+<div class="flex flex-col justify-center gap-space-sm shrink-0 lg:w-80">
+<div class="p-space-md rounded-xl bg-surface-container-lowest text-on-surface shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold">Kanal Pengaduan Resmi</span>
+<h4 class="font-title-md text-title-md font-bold">Lapor Kualitas Menu MBG</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Laporkan keterlambatan, ketidaksesuaian porsi gizi, atau masalah sanitasi dapur SP di wilayah Anda.
+          </p>
+<button class="mt-2 w-full py-2.5 rounded-lg bg-primary text-on-primary font-label-ui text-label-ui font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">support_agent</span> Portal Aduan SPAN-LAPOR!
+          </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Smooth scroll for in-page anchors
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.getBoundingClientRect().top + window.pageYOffset - 90,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low mt-space-3xl py-space-2xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex flex-col gap-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg"><div class="md:col-span-2 flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><div class="w-7 h-7 rounded bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[16px]">nutrition</span></div><span class="font-title-md text-title-md text-primary font-bold tracking-tight">PORTAL DATA MBG NASIONAL</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-lg mt-space-xs">Pusat transparansi dan telemetri kebijakan strategis Program Makan Bergizi Gratis (MBG) Republik Indonesia. Mengawal standar gizi seimbang generasi emas 2045 melalui intervensi nutrisi terstruktur, akuntabel, dan berbasis sains.</p></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-primary uppercase">Kanal Regulasi &amp; Referensi</span><ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Badan Gizi Nasional (BGN RI)</a></li><li><a class="hover:text-primary transition-colors" href="#">Kementerian Keuangan (APBN 2025)</a></li><li><a class="hover:text-primary transition-colors" href="#">Bappenas RPJMN 2025-2029</a></li><li><a class="hover:text-primary transition-colors" href="#">Kemenkes RI Standar AKG</a></li></ul></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-primary uppercase">Riset &amp; Transparansi</span><ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Laporan Audit BPK &amp; BPKP</a></li><li><a class="hover:text-primary transition-colors" href="#">Kajian Dampak Ekonomi LPEM FEB UI</a></li><li><a class="hover:text-primary transition-colors" href="#">WHO School Meal Programs Benchmark</a></li><li><a class="hover:text-primary transition-colors" href="#">Pusat Pengaduan Layanan Terpadu</a></li></ul></div></div><div class="flex flex-col md:flex-row items-center justify-between pt-space-md gap-space-sm"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Badan Gizi Nasional • Sekretariat Program Prioritas Nasional RI. Hak Cipta Dilindungi Undang-Undang.</span><div class="flex items-center gap-space-md font-label-ui text-label-ui text-on-surface-variant"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">verified</span>Data Otentik Negara</span><span>Kebijakan Privasi</span><span>Aksesibilitas Publik</span></div></div></div></footer></body></html>
